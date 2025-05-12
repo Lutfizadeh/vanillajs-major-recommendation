@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tes Prodi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">AI Jurusan</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Tes Prodi</a></li>
+      <li><a href="jurusan.html">Tes Jurusan</a></li>
+      <li><a href="hasil.html">Hasil</a></li>
+    </ul>
+  </nav>
+
+  <!-- Pertanyaan Tes -->
+  <div class="container">
+    <h2>Anda Suka Pelajaran MTK</h2>
+    <div class="scale">
+      <span class="label">Setuju</span>
+      <div class="options">
+        <div class="circle large" data-value="3"></div>
+        <div class="circle medium" data-value="2"></div>
+        <div class="circle small" data-value="1"></div>
+        <div class="circle neutral" data-value="0"></div>
+        <div class="circle small disagree" data-value="-1"></div>
+        <div class="circle medium disagree" data-value="-2"></div>
+        <div class="circle large disagree" data-value="-3"></div>
+      </div>
+      <span class="label">Tidak setuju</span>
+    </div>
+
+    <button class="button" id="next-btn">Pertanyaan Selanjutnya</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

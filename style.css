@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+h2 {
+    color: #3498db;
+    margin-top: 0;
+}
+.scale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.options {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    transition: all 0.3s ease;
+}
+.circle.selected {
+    background-color: #3498db;
+    transform: scale(1.2);
+}
+.circle.large {
+    width: 26px;
+    height: 26px;
+    border-color: #2ecc71;
+}
+.circle.large.selected {
+    background-color: #2ecc71;
+}
+.circle.medium {
+    width: 23px;
+    height: 23px;
+    border-color: #27ae60;
+}
+.circle.medium.selected {
+    background-color: #27ae60;
+}
+.circle.small {
+    width: 20px;
+    height: 20px;
+    border-color: #16a085;
+}
+.circle.small.selected {
+    background-color: #16a085;
+}
+.circle.neutral {
+    width: 18px;
+    height: 18px;
+    border-color: #95a5a6;
+}
+.circle.neutral.selected {
+    background-color: #95a5a6;
+}
+.circle.disagree {
+    border-color: #e74c3c;
+}
+.circle.disagree.selected {
+    background-color: #e74c3c;
+}
+.label {
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: background-color 0.3s;
+}
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+.hasil-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+}
+.hasil-container h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+.reset-btn {
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.reset-btn:hover {
+    background-color: #7f8c8d;
+}
+.jurusan-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.jurusan-teknik-elektro {
+    background-color: rgba(52, 152, 219, 0.1);
+    border-left: 5px solid #3498db;
+}
+.jurusan-teknik-informatika {
+    background-color: rgba(46, 204, 113, 0.1);
+    border-left: 5px solid #2ecc71;
+}
