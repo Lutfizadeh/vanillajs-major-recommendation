@@ -1,91 +1,158 @@
-body {
+/* Reset dan Pengaturan Global */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
+    background-color: #eafaf6;
+    color: #444c5c;
+    text-align: center;
+    padding: 80px 20px 50px; /* top adjusted for fixed navbar */
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #074377;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+  }
+  
+  .nav-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e99b26;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #e99b26;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #3ba17c;
+  }
+  
+  /* Container */
+  .container {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-.container {
-    margin-bottom: 30px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-}
-h1 {
+    margin: auto;
+  }
+  
+  /* Heading */
+  h1 {
     text-align: center;
     color: #2c3e50;
-}
-h2 {
-    color: #3498db;
-    margin-top: 0;
-}
-.scale {
+  }
+  
+  h2 {
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  
+  /* Skala Penilaian */
+  .scale {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
-}
-.options {
+  }
+  
+  .options {
     display: flex;
     flex: 1;
     justify-content: space-between;
     margin: 0 20px;
-}
-.circle {
+  }
+  
+  .label {
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+  }
+  
+  /* Lingkaran Skala */
+  .circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid #3498db;
     transition: all 0.3s ease;
-}
-.circle.selected {
+  }
+  
+  .circle.selected {
     background-color: #3498db;
     transform: scale(1.2);
-}
-.circle.large {
-    width: 26px;
-    height: 26px;
+  }
+  
+  /* Ukuran & Warna Khusus */
+  .circle.large {
+    width: 48px;
+    height: 48px;
     border-color: #2ecc71;
-}
-.circle.large.selected {
+  }
+  .circle.large.selected {
     background-color: #2ecc71;
-}
-.circle.medium {
-    width: 23px;
-    height: 23px;
+  }
+  
+  .circle.medium {
+    width: 36px;
+    height: 36px;
     border-color: #27ae60;
-}
-.circle.medium.selected {
+  }
+  .circle.medium.selected {
     background-color: #27ae60;
-}
-.circle.small {
+  }
+  
+  .circle.small {
+    width: 24px;
+    height: 24px;
+    border-color: #16a085;
+  }
+  .circle.small.selected {
+    background-color: #16a085;
+  }
+  
+  .circle.neutral {
     width: 20px;
     height: 20px;
-    border-color: #16a085;
-}
-.circle.small.selected {
-    background-color: #16a085;
-}
-.circle.neutral {
-    width: 18px;
-    height: 18px;
     border-color: #95a5a6;
-}
-.circle.neutral.selected {
+  }
+  .circle.neutral.selected {
     background-color: #95a5a6;
-}
-.circle.disagree {
+  }
+  
+  .circle.disagree {
     border-color: #e74c3c;
-}
-.circle.disagree.selected {
+  }
+  .circle.disagree.selected {
     background-color: #e74c3c;
-}
-.label {
-    font-weight: bold;
-    width: 100px;
-    text-align: center;
-}
-.submit-btn {
+  }
+  
+  /* Tombol Submit */
+  .submit-btn {
     background-color: #3498db;
     color: white;
     border: none;
@@ -96,23 +163,29 @@ h2 {
     display: block;
     margin: 30px auto;
     transition: background-color 0.3s;
-}
-.submit-btn:hover {
+  }
+  
+  .submit-btn:hover {
     background-color: #2980b9;
-}
-.hasil-container {
+  }
+  
+  /* Hasil */
+  .hasil-container {
     text-align: center;
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
-}
-.hasil-container h2 {
+  }
+  
+  .hasil-container h2 {
     margin-top: 0;
     color: #2c3e50;
-}
-.reset-btn {
+  }
+  
+  /* Tombol Reset */
+  .reset-btn {
     background-color: #95a5a6;
     color: white;
     border: none;
@@ -122,20 +195,26 @@ h2 {
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s;
-}
-.reset-btn:hover {
+  }
+  
+  .reset-btn:hover {
     background-color: #7f8c8d;
-}
-.jurusan-item {
+  }
+  
+  /* Highlight Jurusan */
+  .jurusan-item {
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 5px;
-}
-.jurusan-teknik-elektro {
+  }
+  
+  .jurusan-teknik-elektro {
     background-color: rgba(52, 152, 219, 0.1);
     border-left: 5px solid #3498db;
-}
-.jurusan-teknik-informatika {
+  }
+  
+  .jurusan-teknik-informatika {
     background-color: rgba(46, 204, 113, 0.1);
     border-left: 5px solid #2ecc71;
-}
+  }
+  

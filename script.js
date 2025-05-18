@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const hasilContainer = document.getElementById('hasilContainer');
       const scoreElka = document.getElementById('scoreElka');
       const scoreElin = document.getElementById('scoreElin');
-      // const scoreTelkom = document.getElementById('scoreTelkom');
+      const scoreTelkom = document.getElementById('scoreTelkom');
       // const scoreTRI = document.getElementById('scoreTRI');
       // const scoreSDT = document.getElementById('scoreSDT');
       // const scoreCE = document.getElementById('scoreCE');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let answers = {
         elka: [null, null, null],
         elin: [null, null, null],
-        // telkom: [null, null, null],
+        telkom: [null, null, null],
         // tri: [null, null, null],
         // sdt: [null, null, null],
         // ce: [null, null, null],
@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'elin':
               answers.elin[questionId] = value;
               break;
-            // case 'telkom':
-            //   answers.telkom[questionId] = value;
-            //   break;
+            case 'telkom':
+              answers.telkom[questionId] = value;
+              break;
             // case 'tri':
             //   answers.tri[questionId] = value;
             //   break;
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Calculate scores
         const elkaScore = answers.elka.reduce((a, b) => a + b, 0);
         const elinScore = answers.elin.reduce((a, b) => a + b, 0);
-        // const telkomScore = answers.telkom.reduce((a, b) => a + b, 0);
+        const telkomScore = answers.telkom.reduce((a, b) => a + b, 0);
         // const triScore = answers.tri.reduce((a, b) => a + b, 0);
         // const sdtScore = answers.sdt.reduce((a, b) => a + b, 0);
         // const ceScore = answers.ce.reduce((a, b) => a + b, 0);
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update results
         scoreElka.textContent = elkaScore;
         scoreElin.textContent = elinScore;
-        // scoreTelkom.textContent = telkomScore;
+        scoreTelkom.textContent = telkomScore;
         // scoreTRI.textContent = triScore;
         // scoreSDT.textContent = sdtScore;
         // scoreCE.textContent = ceScore;
@@ -136,22 +136,22 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show recommendation
         let recommendation = '';
         console.log(elkaScore)
-        let recom = Math.max(elkaScore, elinScore);
+        let recom = Math.max(elkaScore, elinScore, telkomScore);
         // let recom = Math.max(elkaScore, elinScore, telkomScore, triScore, sdtScore, ceScore, itScore, mekaScore, speScore, mmbScore, gtScore, trmScore);
 
         switch (recom) {
           case elkaScore:
             recommendation = '<h3>Rekomendasi: Teknik elka</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik elka.</p>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Elektronika.</p>';
             break;
           case elinScore:
-            recommendation = '<h3>Rekomendasi: Teknik Informatika</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Informatika.</p>';
+            recommendation = '<h3>Rekomendasi: Teknik Elektro Industri</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Elektro Industri.</p>';
             break;
-          // case telkomScore:
-          //   recommendation = '<h3>Rekomendasi: Teknik Telekomunikasi</h3>';
-          //   recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Telekomunikasi.</p>';
-          //   break;
+          case telkomScore:
+            recommendation = '<h3>Rekomendasi: Teknik Telekomunikasi</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Telekomunikasi.</p>';
+            break;
           // case triScore:
           //   recommendation = '<h3>Rekomendasi: Teknik Transportasi</h3>';
           //   recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Transportasi.</p>';
@@ -220,7 +220,8 @@ document.addEventListener('DOMContentLoaded', function() {
           // Reset answers
           answers = {
             elka: [null, null, null],
-            elin: [null, null, null]
+            elin: [null, null, null],
+            telkom: [null, null, null],
           };
           
           // Hide results
