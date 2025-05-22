@@ -106,18 +106,18 @@ document.addEventListener('DOMContentLoaded', function() {
         // }
         
         // Calculate scores
-        const elkaScore = answers.elka.reduce((a, b) => a + b, 0);
-        const elinScore = answers.elin.reduce((a, b) => a + b, 0);
-        const telkomScore = answers.telkom.reduce((a, b) => a + b, 0);
-        const triScore = answers.tri.reduce((a, b) => a + b, 0);
-        const sdtScore = answers.sdt.reduce((a, b) => a + b, 0);
-        const ceScore = answers.ce.reduce((a, b) => a + b, 0);
-        const itScore = answers.it.reduce((a, b) => a + b, 0);
-        const mekaScore = answers.meka.reduce((a, b) => a + b, 0);
-        const speScore = answers.spe.reduce((a, b) => a + b, 0);
-        const mmbScore = answers.mmb.reduce((a, b) => a + b, 0);
-        const gtScore = answers.gt.reduce((a, b) => a + b, 0);
-        const trmScore = answers.trm.reduce((a, b) => a + b, 0);
+        const elkaScore = answers.elka.reduce((a, b) => a + b, 0)*5/100;
+        const elinScore = answers.elin.reduce((a, b) => a + b, 0)*5/100;
+        const telkomScore = answers.telkom.reduce((a, b) => a + b, 0)*5/100;
+        const triScore = answers.tri.reduce((a, b) => a + b, 0)*5/100;
+        const sdtScore = answers.sdt.reduce((a, b) => a + b, 0)*5/100;
+        const ceScore = answers.ce.reduce((a, b) => a + b, 0)*5/100;
+        const itScore = answers.it.reduce((a, b) => a + b, 0)*5/100;
+        const mekaScore = answers.meka.reduce((a, b) => a + b, 0)*5/100;
+        const speScore = answers.spe.reduce((a, b) => a + b, 0)*5/100;
+        const mmbScore = answers.mmb.reduce((a, b) => a + b, 0)*5/100;
+        const gtScore = answers.gt.reduce((a, b) => a + b, 0)*5/100;
+        const trmScore = answers.trm.reduce((a, b) => a + b, 0)*5/100;
         
         // Update results
         scoreElka.textContent = elkaScore;
@@ -135,7 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Show recommendation
         let recommendation = '';
-        console.log(elkaScore)
         let recom = Math.max(elkaScore, elinScore, telkomScore, triScore, sdtScore, ceScore, itScore, mekaScore, speScore, mmbScore, gtScore, trmScore);
 
         switch (recom) {
@@ -152,54 +151,44 @@ document.addEventListener('DOMContentLoaded', function() {
             recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Telekomunikasi.</p>';
             break;
           case triScore:
-            recommendation = '<h3>Rekomendasi : Teknik Transportasi</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Transportasi.</p>';
+            recommendation = '<h3>Rekomendasi : Teknik Rekayasa Internet</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Rekayasa Internet.</p>';
             break;
           case sdtScore:
-            recommendation = '<h3>Rekomendasi : Sistem Data Terdistribusi</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Sistem Data Terdistribusi.</p>';
+            recommendation = '<h3>Rekomendasi : Sistem Data Terapan</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Sistem Data Terapan.</p>';
             break;
           case ceScore:
             recommendation = '<h3>Rekomendasi : Teknik Komputer</h3>';
             recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Komputer.</p>';
             break;
           case itScore:
-            recommendation = '<h3>Rekomendasi : Teknologi Informasi</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknologi Informasi.</p>';
+            recommendation = '<h3>Rekomendasi : Teknik Informatika</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Informaatika.</p>';
             break;
           case mekaScore:
             recommendation = '<h3>Rekomendasi : Teknik Mekatronika</h3>';
             recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Mekatronika.</p>';
             break;
           case speScore:
-            recommendation = '<h3>Rekomendasi : Sistem Perangkat Lunak</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Sistem Perangkat Lunak.</p>';
+            recommendation = '<h3>Rekomendasi : Sistem Pembangkit Energi</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Sistem Pembangkit Energi.</p>';
             break;
           case mmbScore:
-            recommendation = '<h3>Rekomendasi : Multimedia</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Multimedia.</p>';
+            recommendation = '<h3>Rekomendasi : Teknologi Multimedia Broadcasting</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknologi Multimedia Broadcasting.</p>';
             break;
           case gtScore:
-            recommendation = '<h3>Rekomendasi : Geodesi dan Geomatika</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Geodesi dan Geomatika.</p>';
+            recommendation = '<h3>Rekomendasi : Teknologi Game</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknologi Game.</p>';
             break;
           case trmScore:
-            recommendation = '<h3>Rekomendasi : Teknik Robotika dan Mekatronika</h3>';
-            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Robotika dan Mekatronika.</p>';
+            recommendation = '<h3>Rekomendasi : Teknik Rekayasa Multimedia</h3>';
+            recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Rekayasa Multimedia.</p>';
             break;
           default:
             recommendation = '<h3>Rekomendasi : Tidak ada rekomendasi yang jelas</h3>';
             recommendation += '<p>Berdasarkan jawaban Anda, tidak ada jurusan yang menonjol. Pertimbangkan untuk menjelajahi lebih lanjut tentang masing-masing jurusan.</p>';
-        }
-        if (elkaScore > informatikaScore) {
-          recommendation = '<h3>Rekomendasi : Teknik Elektronika</h3>';
-          recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Elektronika.</p>';
-        } else if (informatikaScore > elkaScore) {
-          recommendation = '<h3>Rekomendasi : Teknik Informatika</h3>';
-          recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Informatika.</p>';
-        } else {
-          recommendation = '<h3>Rekomendasi : Keduanya Cocok</h3>';
-          recommendation += '<p>Berdasarkan jawaban Anda, Anda memiliki minat yang seimbang terhadap Teknik elka dan Teknik Informatika. Pertimbangkan jurusan yang menggabungkan keduanya seperti Teknik Komputer atau Sistem Komputer.</p>';
         }
         
         rekomendasiJurusan.innerHTML = recommendation;
