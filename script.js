@@ -106,32 +106,32 @@ document.addEventListener('DOMContentLoaded', function() {
         // }
         
         // Calculate scores
-        const elkaScore = answers.elka.reduce((a, b) => a + b, 0)*5/100;
-        const elinScore = answers.elin.reduce((a, b) => a + b, 0)*5/100;
-        const telkomScore = answers.telkom.reduce((a, b) => a + b, 0)*5/100;
-        const triScore = answers.tri.reduce((a, b) => a + b, 0)*5/100;
-        const sdtScore = answers.sdt.reduce((a, b) => a + b, 0)*5/100;
-        const ceScore = answers.ce.reduce((a, b) => a + b, 0)*5/100;
-        const itScore = answers.it.reduce((a, b) => a + b, 0)*5/100;
-        const mekaScore = answers.meka.reduce((a, b) => a + b, 0)*5/100;
-        const speScore = answers.spe.reduce((a, b) => a + b, 0)*5/100;
-        const mmbScore = answers.mmb.reduce((a, b) => a + b, 0)*5/100;
-        const gtScore = answers.gt.reduce((a, b) => a + b, 0)*5/100;
-        const trmScore = answers.trm.reduce((a, b) => a + b, 0)*5/100;
+        const elkaScore = answers.elka.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const elinScore = answers.elin.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const telkomScore = answers.telkom.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const triScore = answers.tri.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const sdtScore = answers.sdt.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const ceScore = answers.ce.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const itScore = answers.it.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const mekaScore = answers.meka.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const speScore = answers.spe.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const mmbScore = answers.mmb.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const gtScore = answers.gt.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
+        const trmScore = answers.trm.reduce((a, b) => a + b, 0) / 5 / 7 * 100;
         
         // Update results
-        scoreElka.textContent = elkaScore;
-        scoreElin.textContent = elinScore;
-        scoreTelkom.textContent = telkomScore;
-        scoreTRI.textContent = triScore;
-        scoreSDT.textContent = sdtScore;
-        scoreCE.textContent = ceScore;
-        scoreIT.textContent = itScore;
-        scoreMeka.textContent = mekaScore;
-        scoreSPE.textContent = speScore;
-        scoreMMB.textContent = mmbScore;
-        scoreGT.textContent = gtScore;
-        scoreTRM.textContent = trmScore;
+        scoreElka.textContent = elkaScore + "%";
+        scoreElin.textContent = elinScore + "%";
+        scoreTelkom.textContent = telkomScore + "%";
+        scoreTRI.textContent = triScore + "%";
+        scoreSDT.textContent = sdtScore + "%";
+        scoreCE.textContent = ceScore + "%";
+        scoreIT.textContent = itScore + "%";
+        scoreMeka.textContent = mekaScore + "%";
+        scoreSPE.textContent = speScore + "%";
+        scoreMMB.textContent = mmbScore + "%";
+        scoreGT.textContent = gtScore + "%";
+        scoreTRM.textContent = trmScore + "%";
         
         // Show recommendation
         let recommendation = '';
