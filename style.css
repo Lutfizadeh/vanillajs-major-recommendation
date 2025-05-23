@@ -201,108 +201,113 @@ h2 {
     background-color: #7f8c8d;
 }
 
-/* Highlight Jurusan */
-.jurusan-item {
+/* Highlight prodi & department */
+.prodi-item,
+.department-item {
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 5px;
-  }
-  
-  .jurusan-teknik-elektronika {
+}
+
+.prodi-teknik-elektronika {
     background-color: rgba(52, 152, 219, 0.1);
     border-left: 5px solid #3498db;
-  }
-  
-  .jurusan-teknik-informatika {
+}
+
+.prodi-teknik-informatika {
     background-color: rgba(46, 204, 113, 0.1);
     border-left: 5px solid #2ecc71;
-  }
+}
 
-  .circle.selected {
-  border: 3px solid #000;
-  background-color: #88e;
-  }
+.circle.selected {
+    border: 3px solid #000;
+    background-color: #88e;
+}
 
-  .jurusan-item {
-  padding: 16px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  transition: background-color 0.3s ease;
-  border: 1px solid #ccc;
-  }
+.prodi-item,
+.department-item {
+    padding: 16px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #ccc;
+}
 
 #hasilContainer h2 {
-  margin-bottom: 20px;
-  }
-
-#rekomendasiJurusan {
-  background: #e6ffe6;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #99cc99;
-  font-size: 1.1rem;
-  }
-
-
-
-
-.jurusan-teknik-elektronika {
-  background-color: rgba(0, 51, 102, 0.2);
-  border-left: 5px solid #003366;
+    margin-bottom: 20px;
 }
 
-.jurusan-teknik-telekomunikasi {
-  background-color: rgba(128, 0, 0, 0.2);
-  border-left: 5px solid #800000;
+#rekomendasiProdi,
+#rekomendasiDepartemen {
+    background: #e6ffe6;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #99cc99;
+    font-size: 1.1rem;
 }
 
-.jurusan-teknik-elektro-industri {
-  background-color: rgba(128, 128, 128, 0.2);
-  border-left: 5px solid #808080;
+.prodi-teknik-elektronika, .departemen-teknik-informatika-dan-komputer {
+    background-color: rgba(0, 51, 102, 0.2);
+    border-left: 5px solid #003366;
 }
 
-.jurusan-teknik-informatika {
-  background-color: rgba(46, 204, 113, 0.2);
-  border-left: 5px solid #2ecc71;
+.prodi-teknik-telekomunikasi, .departemen-teknologi-multimedia-kreatif {
+    background-color: rgba(128, 0, 0, 0.2);
+    border-left: 5px solid #800000;
 }
 
-.jurusan-teknik-mekatronika {
-  background-color: rgba(255, 165, 0, 0.2);
-  border-left: 5px solid #FFA500;
+.prodi-teknik-elektro-industri {
+    background-color: rgba(128, 128, 128, 0.2);
+    border-left: 5px solid #808080;
 }
 
-.jurusan-teknik-komputer {
-  background-color: rgba(0, 100, 0, 0.2);
-  border-left: 5px solid #006400;
+.prodi-teknik-informatika {
+    background-color: rgba(46, 204, 113, 0.2);
+    border-left: 5px solid #2ecc71;
 }
 
-.jurusan-sistem-pembangkitan-energi {
-  background-color: rgba(139, 69, 19, 0.2);
-  border-left: 5px solid #8B4513;
+.prodi-teknik-mekatronika, .departemen-teknik-elektronika {
+    background-color: rgba(255, 165, 0, 0.2);
+    border-left: 5px solid #ffa500;
 }
 
-.jurusan-teknologi-multimedia-broadcasting {
-  background-color: rgba(128, 0, 128, 0.2);
-  border-left: 5px solid #800080;
+.prodi-teknik-komputer, .departemen-teknik-mekanika-dan-energi {
+    background-color: rgba(0, 100, 0, 0.2);
+    border-left: 5px solid #006400;
 }
 
-.jurusan-teknologi-game {
-  background-color: rgba(255, 215, 0, 0.2);
-  border-left: 5px solid #FFD700;
+.prodi-sistem-pembangkitan-energi {
+    background-color: rgba(139, 69, 19, 0.2);
+    border-left: 5px solid #8b4513;
 }
 
-.jurusan-teknologi-rekayasa-internet {
-  background-color: rgba(30, 144, 255, 0.2);
-  border-left: 5px solid #1E90FF;
+.prodi-teknologi-multimedia-broadcasting {
+    background-color: rgba(128, 0, 128, 0.2);
+    border-left: 5px solid #800080;
 }
 
-.jurusan-teknologi-rekayasa-multimedia {
-  background-color: rgba(255, 105, 180, 0.2);
-  border-left: 5px solid #FF69B4;
+.prodi-teknologi-game {
+    background-color: rgba(255, 215, 0, 0.2);
+    border-left: 5px solid #ffd700;
 }
 
-.jurusan-sains-data-terapan {
-  background-color: rgba(0, 128, 0, 0.2); /* Hijau lebih gelap agar tidak tampak putih */
-  border-left: 5px solid #90EE90;
+.prodi-teknologi-rekayasa-internet {
+    background-color: rgba(30, 144, 255, 0.2);
+    border-left: 5px solid #1e90ff;
+}
+
+.prodi-teknologi-rekayasa-multimedia {
+    background-color: rgba(255, 105, 180, 0.2);
+    border-left: 5px solid #ff69b4;
+}
+
+.prodi-sains-data-terapan {
+  background-color: rgba(
+    0,
+    128,
+    0,
+    0.2
+    ); /* Hijau lebih gelap agar tidak tampak putih */
+    border-left: 5px solid #90ee90;
 }

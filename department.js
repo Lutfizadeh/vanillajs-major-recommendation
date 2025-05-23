@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const scoreDTIK = document.getElementById('scoreDTIK');
   const scoreDTME = document.getElementById('scoreDTME');
   const scoreDTMK = document.getElementById('scoreDTMK');
-  const rekomendasiJurusan = document.getElementById('rekomendasiJurusan');
+  const rekomendasiDepartemen = document.getElementById('rekomendasiDepartemen');
 
   let answers = {
     dte: [],
@@ -37,17 +37,17 @@ document.addEventListener('DOMContentLoaded', function () {
   submitBtn.addEventListener('click', function () {
     // Hitung skor total per departemen
     const score = {
-      dte: (answers.dte.reduce((a, b) => a + (b || 0), 0)) * 5 / 100,
-      dtik: (answers.dtik.reduce((a, b) => a + (b || 0), 0)) * 5 / 100,
-      dtme: (answers.dtme.reduce((a, b) => a + (b || 0), 0)) * 5 / 100,
-      dtmk: (answers.dtmk.reduce((a, b) => a + (b || 0), 0)) * 5 / 100
+      dte: (answers.dte.reduce((a, b) => a + (b || 0), 0)) / 5 / 7 * 100,
+      dtik: (answers.dtik.reduce((a, b) => a + (b || 0), 0)) / 5 / 7 * 100,
+      dtme: (answers.dtme.reduce((a, b) => a + (b || 0), 0)) / 5 / 7 * 100,
+      dtmk: (answers.dtmk.reduce((a, b) => a + (b || 0), 0)) / 5 / 7 * 100
     };
 
     // Tampilkan nilai
-    scoreDTE.textContent = score.dte.toFixed(2);
-    scoreDTIK.textContent = score.dtik.toFixed(2);
-    scoreDTME.textContent = score.dtme.toFixed(2);
-    scoreDTMK.textContent = score.dtmk.toFixed(2);
+    scoreDTE.textContent = score.dte + "%";
+    scoreDTIK.textContent = score.dtik + "%";
+    scoreDTME.textContent = score.dtme + "%";
+    scoreDTMK.textContent = score.dtmk + "%";
 
     // Tentukan rekomendasi tertinggi
     const maxScore = Math.max(score.dte, score.dtik, score.dtme, score.dtmk);
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         recommendation = `<h3>Tidak ada rekomendasi dominan</h3><p>Silakan isi lebih banyak pertanyaan untuk hasil yang lebih akurat.</p>`;
     }
 
-    rekomendasiJurusan.innerHTML = recommendation;
+    rekomendasiDepartemen.innerHTML = recommendation;
 
     // Tampilkan hasil
     hasilContainer.style.display = 'block';
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Sembunyikan hasil
     hasilContainer.style.display = 'none';
     submitBtn.style.display = 'block';
-    rekomendasiJurusan.innerHTML = '';
+    rekomendasiDepartment.innerHTML = '';
 
     // Scroll ke atas
     window.scrollTo({ top: 0, behavior: 'smooth' });

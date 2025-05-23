@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
             recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknologi Game.</p>';
             break;
           case trmScore:
-            recommendation = '<h3>Rekomendasi : Teknik Rekayasa Multimedia</h3>';
+            recommendation = '<h3>Rekomendasi : Teknologi Rekayasa Multimedia</h3>';
             recommendation += '<p>Berdasarkan jawaban Anda, Anda tampaknya lebih cocok untuk jurusan Teknik Rekayasa Multimedia.</p>';
             break;
           default:
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
             recommendation += '<p>Berdasarkan jawaban Anda, tidak ada jurusan yang menonjol. Pertimbangkan untuk menjelajahi lebih lanjut tentang masing-masing jurusan.</p>';
         }
         
-        rekomendasiJurusan.innerHTML = recommendation;
+        rekomendasiProdi.innerHTML = recommendation;
         
         // Show results
         hasilContainer.style.display = 'block';

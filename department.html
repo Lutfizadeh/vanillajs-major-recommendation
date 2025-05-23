@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tes Prodi</title>
+  <title>Kuisioner Rekomendasi Departemen</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="nav-logo">AI Jurusan</div>
+    <div class="nav-logo">AI Departemen</div>
     <ul class="nav-links">
-      <li><a href="jurusan.html">Tes Jurusan</a></li>
-      <li><a href="index.html">Tes Prodi</a></li>
-      <li><a href="hasil.html">Hasil</a></li>
+      <li><a href="department.html">Cari Departemen yang Cocok</a></li>
+      <li><a href="index.html">Cari Prodi yang Cocok</a></li>
     </ul>
   </nav>
 
@@ -406,35 +405,35 @@
   <div class="hasil-container" id="hasilContainer" style="display: none;">
   <h2>Hasil Rekomendasi Departemen</h2>
 
-  <div class="jurusan-item" id="hasilDTE">
-    <h3>Teknik Elektro</h3>
+  <div class="department-item departemen-teknik-elektronika" id="hasilDTE">
+    <h3>Departemen Teknik Elektro</h3>
     <p>Nilai: <span id="scoreDTE">0</span></p>
     <p>Mempelajari elektronika, sistem komunikasi, dan kelistrikan industri.</p>
   </div>
 
-  <div class="jurusan-item" id="hasilDTIK">
-    <h3>Teknik Informatika & Komputer</h3>
+  <div class="department-item departemen-teknik-informatika-dan-komputer" id="hasilDTIK">
+    <h3>Departemen Teknik Informatika & Komputer</h3>
     <p>Nilai: <span id="scoreDTIK">0</span></p>
     <p>Mempelajari pemrograman, data science, AI, dan sistem komputer.</p>
   </div>
 
-  <div class="jurusan-item" id="hasilDTME">
-    <h3>Teknik Mekanika & Energi</h3>
+  <div class="department-item departemen-teknik-mekanika-dan-energi" id="hasilDTME">
+    <h3>Departemen Teknik Mekanika & Energi</h3>
     <p>Nilai: <span id="scoreDTME">0</span></p>
     <p>Mempelajari sistem mekanik, mekatronika, dan pembangkit energi.</p>
   </div>
 
-  <div class="jurusan-item" id="hasilDTMK">
-    <h3>Teknologi Multimedia Kreatif</h3>
+  <div class="department-item departemen-teknologi-multimedia-kreatif" id="hasilDTMK">
+    <h3>Departemen Teknologi Multimedia Kreatif</h3>
     <p>Nilai: <span id="scoreDTMK">0</span></p>
     <p>Mempelajari desain visual, animasi, game, dan multimedia interaktif.</p>
   </div>
 
-  <div id="rekomendasiJurusan" style="margin-top: 20px;"></div>
+  <div id="rekomendasiDepartemen" style="margin-top: 20px;"></div>
 
   <button class="reset-btn" id="resetBtn">Ulangi Kuesioner</button>
 </div>
   
-  <script src="jurusan.js"></script>
+  <script src="department.js"></script>
 </body>
 </html>
