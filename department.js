@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Sembunyikan hasil
     hasilContainer.style.display = 'none';
     submitBtn.style.display = 'block';
-    rekomendasiDepartment.innerHTML = '';
+    rekomendasiDepartemen.innerHTML = '';
 
     // Scroll ke atas
     window.scrollTo({ top: 0, behavior: 'smooth' });

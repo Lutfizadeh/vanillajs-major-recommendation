@@ -12,6 +12,13 @@ body {
     margin: 0;
 }
 
+/* Mengatur jarak untuk <br> */
+br {
+    display: block;
+    margin: 10px 0; /* Menambahkan margin untuk jarak antar elemen */
+    content: "";
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -54,21 +61,48 @@ body {
     color: #3ba17c;
 }
 
-/* Container */
+/* Container untuk setiap pertanyaan */
 .container {
     max-width: 800px;
     margin: auto;
 }
 
-/* Heading */
+.container.question {
+    max-width: 800px;
+    margin: 20px auto; /* Menambahkan margin antar container */
+    padding: 20px; /* Menambahkan padding untuk ruang dalam */
+    background-color: #fff; /* Latar belakang putih untuk kontras */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Bayangan ringan */
+    display: none; /* Tetap disembunyikan secara default */
+}
+
+/* Menampilkan container aktif */
+.container.question.active {
+    display: block;
+}
+
+/* Teks deskripsi */
+.container p {
+    font-size: 1rem; /* Ukuran font standar untuk deskripsi */
+    margin-bottom: 40px; /* Jarak bawah teks deskripsi */
+    line-height: 1.5; /* Jarak antar baris untuk keterbacahan */
+    font-weight: normal; /* Memastikan teks deskripsi tidak bold */
+}
+
+/* Heading utama */
 h1 {
     text-align: center;
     color: #2c3e50;
+    margin-bottom: 10px; /* Jarak bawah h1 */
 }
 
+/* Pertanyaan */
 h2 {
-    font-weight: 600;
-    margin-bottom: 40px;
+    font-size: 1.1rem; /* Ukuran font sedikit lebih besar untuk keterbacahan */
+    margin-bottom: 15px; /* Jarak bawah teks pertanyaan */
+    line-height: 1.5; /* Jarak antar baris untuk keterbacahan */
+    font-weight: bold; /* Memastikan teks pertanyaan tebal */
 }
 
 /* Skala Penilaian */
@@ -76,20 +110,27 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15px;
+    margin: 20px 0; /* Jarak atas dan bawah */
+    flex-wrap: wrap; /* Membungkus jika layar kecil */
 }
 
+/* Opsi Skala */
 .options {
     display: flex;
     flex: 1;
     justify-content: space-between;
     margin: 0 20px;
+    gap: 10px; /* Jarak antar lingkaran */
+    flex-wrap: wrap; /* Membungkus opsi di layar kecil */
 }
 
+/* Label Setuju/Tidak Setuju */
 .label {
     font-weight: bold;
     width: 100px;
     text-align: center;
+    font-size: 0.9rem; /* Ukuran font lebih kecil untuk label */
+    margin: 10px 0; /* Jarak atas dan bawah */
 }
 
 /* Lingkaran Skala */
@@ -100,11 +141,13 @@ h2 {
     cursor: pointer;
     border: 2px solid #3498db;
     transition: all 0.3s ease;
+    margin: 5px; /* Jarak antar lingkaran */
 }
 
 .circle.selected {
     background-color: #3498db;
     transform: scale(1.2);
+    border: 3px solid #000 !important; /* Memastikan border hitam muncul */
 }
 
 /* Ukuran & Warna Khusus */
@@ -115,6 +158,7 @@ h2 {
 }
 .circle.large.selected {
     background-color: #2ecc71;
+    border: 3px solid #000 !important; /* Memastikan border hitam */
 }
 
 .circle.medium {
@@ -124,6 +168,7 @@ h2 {
 }
 .circle.medium.selected {
     background-color: #27ae60;
+    border: 3px solid #000 !important; /* Memastikan border hitam */
 }
 
 .circle.small {
@@ -133,6 +178,7 @@ h2 {
 }
 .circle.small.selected {
     background-color: #16a085;
+    border: 3px solid #000 !important; /* Memastikan border hitam */
 }
 
 .circle.neutral {
@@ -142,6 +188,7 @@ h2 {
 }
 .circle.neutral.selected {
     background-color: #95a5a6;
+    border: 3px solid #000 !important; /* Memastikan border hitam */
 }
 
 .circle.disagree {
@@ -149,6 +196,7 @@ h2 {
 }
 .circle.disagree.selected {
     background-color: #e74c3c;
+    border: 3px solid #000 !important; /* Memastikan border hitam */
 }
 
 /* Tombol Submit */
@@ -167,6 +215,34 @@ h2 {
 
 .submit-btn:hover {
     background-color: #2980b9;
+}
+
+/* Pagination Buttons */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.page-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.page-btn:hover {
+    background-color: #2980b9;
+}
+
+.page-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
 }
 
 /* Hasil */
@@ -207,52 +283,19 @@ h2 {
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 5px;
-}
-
-.prodi-teknik-elektronika {
-    background-color: rgba(52, 152, 219, 0.1);
-    border-left: 5px solid #3498db;
-}
-
-.prodi-teknik-informatika {
-    background-color: rgba(46, 204, 113, 0.1);
-    border-left: 5px solid #2ecc71;
-}
-
-.circle.selected {
-    border: 3px solid #000;
-    background-color: #88e;
-}
-
-.prodi-item,
-.department-item {
-    padding: 16px;
     background: #f9f9f9;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    transition: background-color 0.3s ease;
     border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
 }
 
-#hasilContainer h2 {
-    margin-bottom: 20px;
-}
-
-#rekomendasiProdi,
-#rekomendasiDepartemen {
-    background: #e6ffe6;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #99cc99;
-    font-size: 1.1rem;
-}
-
-.prodi-teknik-elektronika, .departemen-teknik-informatika-dan-komputer {
+.prodi-teknik-elektronika,
+.departemen-teknik-informatika-dan-komputer {
     background-color: rgba(0, 51, 102, 0.2);
     border-left: 5px solid #003366;
 }
 
-.prodi-teknik-telekomunikasi, .departemen-teknologi-multimedia-kreatif {
+.prodi-teknik-telekomunikasi,
+.departemen-teknologi-multimedia-kreatif {
     background-color: rgba(128, 0, 0, 0.2);
     border-left: 5px solid #800000;
 }
@@ -267,12 +310,14 @@ h2 {
     border-left: 5px solid #2ecc71;
 }
 
-.prodi-teknik-mekatronika, .departemen-teknik-elektronika {
+.prodi-teknik-mekatronika,
+.departemen-teknik-elektronika {
     background-color: rgba(255, 165, 0, 0.2);
     border-left: 5px solid #ffa500;
 }
 
-.prodi-teknik-komputer, .departemen-teknik-mekanika-dan-energi {
+.prodi-teknik-komputer,
+.departemen-teknik-mekanika-dan-energi {
     background-color: rgba(0, 100, 0, 0.2);
     border-left: 5px solid #006400;
 }
@@ -303,11 +348,19 @@ h2 {
 }
 
 .prodi-sains-data-terapan {
-  background-color: rgba(
-    0,
-    128,
-    0,
-    0.2
-    ); /* Hijau lebih gelap agar tidak tampak putih */
+    background-color: rgba(0, 128, 0, 0.2);
     border-left: 5px solid #90ee90;
+}
+
+#hasilContainer h2 {
+    margin-bottom: 20px;
+}
+
+#rekomendasiProdi,
+#rekomendasiDepartemen {
+    background: #e6ffe6;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #99cc99;
+    font-size: 1.1rem;
 }

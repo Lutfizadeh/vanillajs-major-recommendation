@@ -1,1243 +1,1153 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kuesioner Rekomendasi Prodi</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prodi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<br>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">AI Prodi</div>
+        <ul class="nav-links">
+            <li><a href="department.html">Cari Departemen yang Cocok</a></li>
+            <li><a href="index.html">Cari Prodi yang Cocok</a></li>
+        </ul>
+    </nav>
 
-  <nav class="navbar">
-    <div class="nav-logo">AI Prodi</div>
-    <ul class="nav-links">
-      <li><a href="department.html">Cari Departemen yang Cocok</a></li>
-      <li><a href="index.html">Cari Prodi yang Cocok</a></li>
-    </ul>
-  </nav>
+    <h1>Kuesioner Rekomendasi Prodi</h1>
+    <p>Jawablah pertanyaan berikut sesuai dengan preferensi Anda untuk mendapatkan rekomendasi prodi yang sesuai.</p>
 
-  <h1>Kuesioner Rekomendasi Prodi</h1>
-  <p>Jawablah pertanyaan berikut sesuai dengan preferensi Anda untuk mendapatkan rekomendasi prodi yang sesuai.</p><br></br>
+    <!-- Pertanyaan 1-5: Teknik Elektronika -->
+    <div id="question1" class="container question">
+        <h2>1. Apakah Anda suka membongkar dan merakit perangkat elektronik seperti radio atau alat listrik kecil?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elka"></div>
+                <div class="circle medium" data-value="6" data-category="elka"></div>
+                <div class="circle small" data-value="5" data-category="elka"></div>
+                <div class="circle neutral" data-value="4" data-category="elka"></div>
+                <div class="circle small disagree" data-value="3" data-category="elka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elka"></div>
+                <div class="circle large disagree" data-value="1" data-category="elka"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
 
-  <!-- Pertanyaan 1: Teknik Elektronika -->
-  <div class="container" id="question1">
-    <h2>1. Apakah Anda menyukai sesuatu yang berhubungan dengan elektronik?</h2>
+    <div id="question2" class="container question">
+        <h2>2. Apakah Anda tertarik mempelajari komponen seperti resistor, transistor, dan IC?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elka"></div>
+                <div class="circle medium" data-value="6" data-category="elka"></div>
+                <div class="circle small" data-value="5" data-category="elka"></div>
+                <div class="circle neutral" data-value="4" data-category="elka"></div>
+                <div class="circle small disagree" data-value="3" data-category="elka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elka"></div>
+                <div class="circle large disagree" data-value="1" data-category="elka"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question3" class="container question">
+        <h2>3. Apakah Anda ingin belajar tentang sistem analog dan digital dalam elektronik?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elka"></div>
+                <div class="circle medium" data-value="6" data-category="elka"></div>
+                <div class="circle small" data-value="5" data-category="elka"></div>
+                <div class="circle neutral" data-value="4" data-category="elka"></div>
+                <div class="circle small disagree" data-value="3" data-category="elka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elka"></div>
+                <div class="circle large disagree" data-value="1" data-category="elka"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question4" class="container question">
+        <h2>4. Apakah Anda senang membuat alat otomatis berbasis mikrokontroler?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elka"></div>
+                <div class="circle medium" data-value="6" data-category="elka"></div>
+                <div class="circle small" data-value="5" data-category="elka"></div>
+                <div class="circle neutral" data-value="4" data-category="elka"></div>
+                <div class="circle small disagree" data-value="3" data-category="elka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elka"></div>
+                <div class="circle large disagree" data-value="1" data-category="elka"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question5" class="container question">
+        <h2>5. Apakah Anda ingin bekerja di bidang perancangan atau perawatan alat-alat elektronik?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elka"></div>
+                <div class="circle medium" data-value="6" data-category="elka"></div>
+                <div class="circle small" data-value="5" data-category="elka"></div>
+                <div class="circle neutral" data-value="4" data-category="elka"></div>
+                <div class="circle small disagree" data-value="3" data-category="elka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elka"></div>
+                <div class="circle large disagree" data-value="1" data-category="elka"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 6-10: Teknologi Rekayasa Multimedia -->
+    <div id="question6" class="container question">
+        <h2>6. Apakah Anda tertarik menciptakan aplikasi atau media interaktif berbasis multimedia?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="trm"></div>
+                <div class="circle medium" data-value="6" data-category="trm"></div>
+                <div class="circle small" data-value="5" data-category="trm"></div>
+                <div class="circle neutral" data-value="4" data-category="trm"></div>
+                <div class="circle small disagree" data-value="3" data-category="trm"></div>
+                <div class="circle medium disagree" data-value="2" data-category="trm"></div>
+                <div class="circle large disagree" data-value="1" data-category="trm"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question7" class="container question">
+        <h2>7. Apakah Anda ingin belajar desain grafis, animasi 2D/3D, dan interaksi pengguna?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="trm"></div>
+                <div class="circle medium" data-value="6" data-category="trm"></div>
+                <div class="circle small" data-value="5" data-category="trm"></div>
+                <div class="circle neutral" data-value="4" data-category="trm"></div>
+                <div class="circle small disagree" data-value="3" data-category="trm"></div>
+                <div class="circle medium disagree" data-value="2" data-category="trm"></div>
+                <div class="circle large disagree" data-value="1" data-category="trm"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question8" class="container question">
+        <h2>8.  Apakah Anda suka menggabungkan visual, audio, dan teks dalam sebuah aplikasi?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="trm"></div>
+                <div class="circle medium" data-value="6" data-category="trm"></div>
+                <div class="circle small" data-value="5" data-category="trm"></div>
+                <div class="circle neutral" data-value="4" data-category="trm"></div>
+                <div class="circle small disagree" data-value="3" data-category="trm"></div>
+                <div class="circle medium disagree" data-value="2" data-category="trm"></div>
+                <div class="circle large disagree" data-value="1" data-category="trm"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question9" class="container question">
+        <h2>9.  Apakah Anda ingin bekerja di bidang desain UI/UX atau media interaktif?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="trm"></div>
+                <div class="circle medium" data-value="6" data-category="trm"></div>
+                <div class="circle small" data-value="5" data-category="trm"></div>
+                <div class="circle neutral" data-value="4" data-category="trm"></div>
+                <div class="circle small disagree" data-value="3" data-category="trm"></div>
+                <div class="circle medium disagree" data-value="2" data-category="trm"></div>
+                <div class="circle large disagree" data-value="1" data-category="trm"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question10" class="container question">
+        <h2>10. Apakah Anda suka membuat portofolio digital atau konten visual yang menarik?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="trm"></div>
+                <div class="circle medium" data-value="6" data-category="trm"></div>
+                <div class="circle small" data-value="5" data-category="trm"></div>
+                <div class="circle neutral" data-value="4" data-category="trm"></div>
+                <div class="circle small disagree" data-value="3" data-category="trm"></div>
+                <div class="circle medium disagree" data-value="2" data-category="trm"></div>
+                <div class="circle large disagree" data-value="1" data-category="trm"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 11-15: Teknik Telekomunikasi -->
+    <div id="question11" class="container question">
+        <h2>11. Apakah Anda penasaran bagaimana sinyal telepon dan internet dikirimkan?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="telkom"></div>
+                <div class="circle medium" data-value="6" data-category="telkom"></div>
+                <div class="circle small" data-value="5" data-category="telkom"></div>
+                <div class="circle neutral" data-value="4" data-category="telkom"></div>
+                <div class="circle small disagree" data-value="3" data-category="telkom"></div>
+                <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
+                <div class="circle large disagree" data-value="1" data-category="telkom"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question12" class="container question">
+        <h2>12. Apakah Anda tertarik mempelajari jaringan komunikasi, seperti satelit, fiber optic, atau 5G?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="telkom"></div>
+                <div class="circle medium" data-value="6" data-category="telkom"></div>
+                <div class="circle small" data-value="5" data-category="telkom"></div>
+                <div class="circle neutral" data-value="4" data-category="telkom"></div>
+                <div class="circle small disagree" data-value="3" data-category="telkom"></div>
+                <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
+                <div class="circle large disagree" data-value="1" data-category="telkom"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question13" class="container question">
+        <h2>13. Apakah Anda ingin bekerja di bidang penyiaran, ISP, atau operator telekomunikasi?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="telkom"></div>
+                <div class="circle medium" data-value="6" data-category="telkom"></div>
+                <div class="circle small" data-value="5" data-category="telkom"></div>
+                <div class="circle neutral" data-value="4" data-category="telkom"></div>
+                <div class="circle small disagree" data-value="3" data-category="telkom"></div>
+                <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
+                <div class="circle large disagree" data-value="1" data-category="telkom"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question14" class="container question">
+        <h2>14. Apakah Anda suka dengan konsep transmisi data, sinyal, dan sistem komunikasi nirkabel?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="telkom"></div>
+                <div class="circle medium" data-value="6" data-category="telkom"></div>
+                <div class="circle small" data-value="5" data-category="telkom"></div>
+                <div class="circle neutral" data-value="4" data-category="telkom"></div>
+                <div class="circle small disagree" data-value="3" data-category="telkom"></div>
+                <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
+                <div class="circle large disagree" data-value="1" data-category="telkom"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question15" class="container question">
+        <h2>15.  Apakah Anda ingin mempelajari bagaimana sistem komunikasi digital bekerja?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="telkom"></div>
+                <div class="circle medium" data-value="6" data-category="telkom"></div>
+                <div class="circle small" data-value="5" data-category="telkom"></div>
+                <div class="circle neutral" data-value="4" data-category="telkom"></div>
+                <div class="circle small disagree" data-value="3" data-category="telkom"></div>
+                <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
+                <div class="circle large disagree" data-value="1" data-category="telkom"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 16-20: Teknik Elektro Industri -->
+    <div id="question16" class="container question">
+        <h2>16. Apakah Anda tertarik dengan dunia industri dan pabrik otomatis?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elin"></div>
+                <div class="circle medium" data-value="6" data-category="elin"></div>
+                <div class="circle small" data-value="5" data-category="elin"></div>
+                <div class="circle neutral" data-value="4" data-category="elin"></div>
+                <div class="circle small disagree" data-value="3" data-category="elin"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elin"></div>
+                <div class="circle large disagree" data-value="1" data-category="elin"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question17" class="container question">
+        <h2>17. Apakah Anda ingin belajar tentang sistem pengendali seperti PLC dan SCADA?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elin"></div>
+                <div class="circle medium" data-value="6" data-category="elin"></div>
+                <div class="circle small" data-value="5" data-category="elin"></div>
+                <div class="circle neutral" data-value="4" data-category="elin"></div>
+                <div class="circle small disagree" data-value="3" data-category="elin"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elin"></div>
+                <div class="circle large disagree" data-value="1" data-category="elin"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question18" class="container question">
+        <h2>18. Apakah Anda suka mempelajari motor listrik, sensor, dan sistem aktuator?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elin"></div>
+                <div class="circle medium" data-value="6" data-category="elin"></div>
+                <div class="circle small" data-value="5" data-category="elin"></div>
+                <div class="circle neutral" data-value="4" data-category="elin"></div>
+                <div class="circle small disagree" data-value="3" data-category="elin"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elin"></div>
+                <div class="circle large disagree" data-value="1" data-category="elin"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question19" class="container question">
+        <h2>19. Apakah Anda ingin mendesain dan memperbaiki sistem kelistrikan industri?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elin"></div>
+                <div class="circle medium" data-value="6" data-category="elin"></div>
+                <div class="circle small" data-value="5" data-category="elin"></div>
+                <div class="circle neutral" data-value="4" data-category="elin"></div>
+                <div class="circle small disagree" data-value="3" data-category="elin"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elin"></div>
+                <div class="circle large disagree" data-value="1" data-category="elin"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question20" class="container question">
+        <h2>20. Apakah Anda ingin bekerja di bidang perawatan dan pengendalian sistem industri?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="elin"></div>
+                <div class="circle medium" data-value="6" data-category="elin"></div>
+                <div class="circle small" data-value="5" data-category="elin"></div>
+                <div class="circle neutral" data-value="4" data-category="elin"></div>
+                <div class="circle small disagree" data-value="3" data-category="elin"></div>
+                <div class="circle medium disagree" data-value="2" data-category="elin"></div>
+                <div class="circle large disagree" data-value="1" data-category="elin"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 21-25: Teknik Informatika -->
+    <div id="question21" class="container question">
+        <h2>21.  Apakah Anda suka menulis kode dan membuat program komputer?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="it"></div>
+                <div class="circle medium" data-value="6" data-category="it"></div>
+                <div class="circle small" data-value="5" data-category="it"></div>
+                <div class="circle neutral" data-value="4" data-category="it"></div>
+                <div class="circle small disagree" data-value="3" data-category="it"></div>
+                <div class="circle medium disagree" data-value="2" data-category="it"></div>
+                <div class="circle large disagree" data-value="1" data-category="it"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question22" class="container question">
+        <h2>22. Apakah Anda tertarik dengan pengembangan aplikasi berbasis web atau mobile?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="it"></div>
+                <div class="circle medium" data-value="6" data-category="it"></div>
+                <div class="circle small" data-value="5" data-category="it"></div>
+                <div class="circle neutral" data-value="4" data-category="it"></div>
+                <div class="circle small disagree" data-value="3" data-category="it"></div>
+                <div class="circle medium disagree" data-value="2" data-category="it"></div>
+                <div class="circle large disagree" data-value="1" data-category="it"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question23" class="container question">
+        <h2>23. Apakah Anda ingin mendalami algoritma, struktur data, dan pemrograman lanjutan?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="it"></div>
+                <div class="circle medium" data-value="6" data-category="it"></div>
+                <div class="circle small" data-value="5" data-category="it"></div>
+                <div class="circle neutral" data-value="4" data-category="it"></div>
+                <div class="circle small disagree" data-value="3" data-category="it"></div>
+                <div class="circle medium disagree" data-value="2" data-category="it"></div>
+                <div class="circle large disagree" data-value="1" data-category="it"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question24" class="container question">
+        <h2>24. Apakah Anda suka memecahkan masalah teknis dengan pendekatan logika dan software?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="it"></div>
+                <div class="circle medium" data-value="6" data-category="it"></div>
+                <div class="circle small" data-value="5" data-category="it"></div>
+                <div class="circle neutral" data-value="4" data-category="it"></div>
+                <div class="circle small disagree" data-value="3" data-category="it"></div>
+                <div class="circle medium disagree" data-value="2" data-category="it"></div>
+                <div class="circle large disagree" data-value="1" data-category="it"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question25" class="container question">
+        <h2>25. Apakah Anda ingin bekerja sebagai software engineer, developer, atau programmer?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="it"></div>
+                <div class="circle medium" data-value="6" data-category="it"></div>
+                <div class="circle small" data-value="5" data-category="it"></div>
+                <div class="circle neutral" data-value="4" data-category="it"></div>
+                <div class="circle small disagree" data-value="3" data-category="it"></div>
+                <div class="circle medium disagree" data-value="2" data-category="it"></div>
+                <div class="circle large disagree" data-value="1" data-category="it"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 26-30: Sains Data Terapan -->
+    <div id="question26" class="container question">
+        <h2>26. Apakah Anda suka mengolah data dan menemukan pola dari data yang rumit?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="sdt"></div>
+                <div class="circle medium" data-value="6" data-category="sdt"></div>
+                <div class="circle small" data-value="5" data-category="sdt"></div>
+                <div class="circle neutral" data-value="4" data-category="sdt"></div>
+                <div class="circle small disagree" data-value="3" data-category="sdt"></div>
+                <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
+                <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+    </div>
+
+    <div id="question27" class="container question">
+        <h2>27. Apakah Anda ingin belajar statistik, machine learning, dan visualisasi data?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="sdt"></div>
+                <div class="circle medium" data-value="6" data-category="sdt"></div>
+                <div class="circle small" data-value="5" data-category="sdt"></div>
+                <div class="circle neutral" data-value="4" data-category="sdt"></div>
+                <div class="circle small disagree" data-value="3" data-category="sdt"></div>
+                <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
+                <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+    </div>
+
+    <div id="question28" class="container question">
+        <h2>28. Apakah Anda tertarik membuat model prediktif untuk membantu pengambilan keputusan?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="sdt"></div>
+                <div class="circle medium" data-value="6" data-category="sdt"></div>
+                <div class="circle small" data-value="5" data-category="sdt"></div>
+                <div class="circle neutral" data-value="4" data-category="sdt"></div>
+                <div class="circle small disagree" data-value="3" data-category="sdt"></div>
+                <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
+                <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+    </div>
+
+    <div id="question29" class="container question">
+        <h2>29. Apakah Anda penasaran bagaimana Netflix, Google, atau Tokopedia merekomendasikan sesuatu?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="sdt"></div>
+                <div class="circle medium" data-value="6" data-category="sdt"></div>
+                <div class="circle small" data-value="5" data-category="sdt"></div>
+                <div class="circle neutral" data-value="4" data-category="sdt"></div>
+                <div class="circle small disagree" data-value="3" data-category="sdt"></div>
+                <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
+                <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+    </div>
+
+    <div id="question30" class="container question">
+        <h2>30. Apakah Anda ingin bekerja sebagai data analyst, data scientist, atau AI engineer?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="sdt"></div>
+                <div class="circle medium" data-value="6" data-category="sdt"></div>
+                <div class="circle small" data-value="5" data-category="sdt"></div>
+                <div class="circle neutral" data-value="4" data-category="sdt"></div>
+                <div class="circle small disagree" data-value="3" data-category="sdt"></div>
+                <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
+                <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 31-35: Teknik Komputer -->
+    <div id="question31" class="container question">
+        <h2>31. Apakah Anda ingin belajar hardware dan software secara seimbang?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="ce"></div>
+                <div class="circle medium" data-value="6" data-category="ce"></div>
+                <div class="circle small" data-value="5" data-category="ce"></div>
+                <div class="circle neutral" data-value="4" data-category="ce"></div>
+                <div class="circle small disagree" data-value="3" data-category="ce"></div>
+                <div class="circle medium disagree" data-value="2" data-category="ce"></div>
+                <div class="circle large disagree" data-value="1" data-category="ce"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question32" class="container question">
+        <h2>32. Apakah Anda tertarik dengan jaringan komputer, sistem operasi, dan keamanan siber?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="ce"></div>
+                <div class="circle medium" data-value="6" data-category="ce"></div>
+                <div class="circle small" data-value="5" data-category="ce"></div>
+                <div class="circle neutral" data-value="4" data-category="ce"></div>
+                <div class="circle small disagree" data-value="3" data-category="ce"></div>
+                <div class="circle medium disagree" data-value="2" data-category="ce"></div>
+                <div class="circle large disagree" data-value="1" data-category="ce"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question33" class="container question">
+        <h2>33. Apakah Anda suka merakit komputer dan memahami arsitektur sistemnya?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="ce"></div>
+                <div class="circle medium" data-value="6" data-category="ce"></div>
+                <div class="circle small" data-value="5" data-category="ce"></div>
+                <div class="circle neutral" data-value="4" data-category="ce"></div>
+                <div class="circle small disagree" data-value="3" data-category="ce"></div>
+                <div class="circle medium disagree" data-value="2" data-category="ce"></div>
+                <div class="circle large disagree" data-value="1" data-category="ce"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question34" class="container question">
+        <h2>34. Apakah Anda ingin mengelola sistem komputer di sebuah perusahaan atau instansi?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="ce"></div>
+                <div class="circle medium" data-value="6" data-category="ce"></div>
+                <div class="circle small" data-value="5" data-category="ce"></div>
+                <div class="circle neutral" data-value="4" data-category="ce"></div>
+                <div class="circle small disagree" data-value="3" data-category="ce"></div>
+                <div class="circle medium disagree" data-value="2" data-category="ce"></div>
+                <div class="circle large disagree" data-value="1" data-category="ce"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question35" class="container question">
+        <h2>35. Apakah Anda tertarik menjadi network engineer, system administrator, atau teknisi IT?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="ce"></div>
+                <div class="circle medium" data-value="6" data-category="ce"></div>
+                <div class="circle small" data-value="5" data-category="ce"></div>
+                <div class="circle neutral" data-value="4" data-category="ce"></div>
+                <div class="circle small disagree" data-value="3" data-category="ce"></div>
+                <div class="circle medium disagree" data-value="2" data-category="ce"></div>
+                <div class="circle large disagree" data-value="1" data-category="ce"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 31-35: Teknik Mekatronika -->
+    <div id="question36" class="container question">
+        <h2>36. Apakah Anda tertarik dengan robotika dan sistem otomatis berbasis sensor dan aktuator?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="meka"></div>
+                <div class="circle medium" data-value="6" data-category="meka"></div>
+                <div class="circle small" data-value="5" data-category="meka"></div>
+                <div class="circle neutral" data-value="4" data-category="meka"></div>
+                <div class="circle small disagree" data-value="3" data-category="meka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="meka"></div>
+                <div class="circle large disagree" data-value="1" data-category="meka"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question37" class="container question">
+        <h2>37.  Apakah Anda ingin menggabungkan keahlian mekanik, elektronik, dan pemrograman?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="meka"></div>
+                <div class="circle medium" data-value="6" data-category="meka"></div>
+                <div class="circle small" data-value="5" data-category="meka"></div>
+                <div class="circle neutral" data-value="4" data-category="meka"></div>
+                <div class="circle small disagree" data-value="3" data-category="meka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="meka"></div>
+                <div class="circle large disagree" data-value="1" data-category="meka"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question38" class="container question">
+        <h2>38. Apakah Anda suka merancang dan membuat sistem otomatis seperti lengan robot atau conveyor?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="meka"></div>
+                <div class="circle medium" data-value="6" data-category="meka"></div>
+                <div class="circle small" data-value="5" data-category="meka"></div>
+                <div class="circle neutral" data-value="4" data-category="meka"></div>
+                <div class="circle small disagree" data-value="3" data-category="meka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="meka"></div>
+                <div class="circle large disagree" data-value="1" data-category="meka"></div>
+            </div>
+            <div class="label">Tidak setuju</div>
+        </div>
+    </div>
+
+    <div id="question39" class="container question">
+        <h2>39. Apakah Anda ingin bekerja di bidang industri otomasi, kendaraan listrik, atau smart system?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="meka"></div>
+                <div class="circle medium" data-value="6" data-category="meka"></div>
+                <div class="circle small" data-value="5" data-category="meka"></div>
+                <div class="circle neutral" data-value="4" data-category="meka"></div>
+                <div class="circle small disagree" data-value="3" data-category="meka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="meka"></div>
+                <div class="circle large disagree" data-value="1" data-category="meka"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+    </div>
+
+    <div id="question40" class="container question">
+        <h2>40. Apakah Anda tertarik menggunakan mikrokontroler dan PLC dalam proyek teknis?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="meka"></div>
+                <div class="circle medium" data-value="6" data-category="meka"></div>
+                <div class="circle small" data-value="5" data-category="meka"></div>
+                <div class="circle neutral" data-value="4" data-category="meka"></div>
+                <div class="circle small disagree" data-value="3" data-category="meka"></div>
+                <div class="circle medium disagree" data-value="2" data-category="meka"></div>
+                <div class="circle large disagree" data-value="1" data-category="meka"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 41-45: Sistem Pembangkit Energi -->
+    <div id="question41" class="container question">
+        <h2>41. Apakah Anda penasaran bagaimana listrik dihasilkan dari air, uap, atau matahari?</h2>
+        <div class="scale">
+            <div class="label">Setuju</div>
+            <div class="options">
+                <div class="circle large" data-value="7" data-category="spe"></div>
+                <div class="circle medium" data-value="6" data-category="spe"></div>
+                <div class="circle small" data-value="5" data-category="spe"></div>
+                <div class="circle neutral" data-value="4" data-category="spe"></div>
+                <div class="circle small disagree" data-value="3" data-category="spe"></div>
+                <div class="circle medium disagree" data-value="2" data-category="spe"></div>
+                <div class="circle large disagree" data-value="1" data-category="spe"></div>
+            </div>
+            <div class="label">Tidak Setuju</div>
+        </div>
+</div>
+
+<div id="question42" class="container question">
+    <h2>42. Apakah Anda ingin belajar tentang sistem pembangkit listrik seperti PLTA, PLTU, PLTS?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elka"></div>
-        <div class="circle medium" data-value="6" data-category="elka"></div>
-        <div class="circle small" data-value="5" data-category="elka"></div>
-        <div class="circle neutral" data-value="4" data-category="elka"></div>
-        <div class="circle small disagree" data-value="3" data-category="elka"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elka"></div>
-        <div class="circle large disagree" data-value="1" data-category="elka"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="spe"></div>
+            <div class="circle medium" data-value="6" data-category="spe"></div>
+            <div class="circle small" data-value="5" data-category="spe"></div>
+            <div class="circle neutral" data-value="4" data-category="spe"></div>
+            <div class="circle small disagree" data-value="3" data-category="spe"></div>
+            <div class="circle medium disagree" data-value="2" data-category="spe"></div>
+            <div class="circle large disagree" data-value="1" data-category="spe"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
-  
-  <!-- Pertanyaan 2: Teknik Elektronika -->
-  <div class="container" id="question2">
-    <h2>2. Apakah Anda tertarik dengan rangkaian listrik dan komponen-komponennya?</h2>
+</div>
+
+<div id="question43" class="container question">
+    <h2>43. Apakah Anda tertarik dengan sistem distribusi energi dan perawatannya?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elka"></div>
-        <div class="circle medium" data-value="6" data-category="elka"></div>
-        <div class="circle small" data-value="5" data-category="elka"></div>
-        <div class="circle neutral" data-value="4" data-category="elka"></div>
-        <div class="circle small disagree" data-value="3" data-category="elka"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elka"></div>
-        <div class="circle large disagree" data-value="1" data-category="elka"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="spe"></div>
+            <div class="circle medium" data-value="6" data-category="spe"></div>
+            <div class="circle small" data-value="5" data-category="spe"></div>
+            <div class="circle neutral" data-value="4" data-category="spe"></div>
+            <div class="circle small disagree" data-value="3" data-category="spe"></div>
+            <div class="circle medium disagree" data-value="2" data-category="spe"></div>
+            <div class="circle large disagree" data-value="1" data-category="spe"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
-  
-  <!-- Pertanyaan 3: Teknik Elektronika -->
-  <div class="container" id="question3">
-    <h2>3. Apakah Anda suka merancang dan memperbaiki perangkat elektronik?</h2>
+</div>
+
+<div id="question44" class="container question">
+    <h2>44. Apakah Anda ingin bekerja di perusahaan energi seperti PLN atau sektor pembangkit mandiri?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elka"></div>
-        <div class="circle medium" data-value="6" data-category="elka"></div>
-        <div class="circle small" data-value="5" data-category="elka"></div>
-        <div class="circle neutral" data-value="4" data-category="elka"></div>
-        <div class="circle small disagree" data-value="3" data-category="elka"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elka"></div>
-        <div class="circle large disagree" data-value="1" data-category="elka"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="spe"></div>
+            <div class="circle medium" data-value="6" data-category="spe"></div>
+            <div class="circle small" data-value="5" data-category="spe"></div>
+            <div class="circle neutral" data-value="4" data-category="spe"></div>
+            <div class="circle small disagree" data-value="3" data-category="spe"></div>
+            <div class="circle medium disagree" data-value="2" data-category="spe"></div>
+            <div class="circle large disagree" data-value="1" data-category="spe"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 4: Teknik Elektronika -->
-  <div class="container" id="question4">
-    <h2>4. Apakah Anda senang melakukan eksperimen menggunakan breadboard atau PCB?</h2>
+<div id="question45" class="container question">
+    <h2>45. Apakah Anda ingin mendalami efisiensi dan kontrol sistem pembangkit energi?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elka"></div>
-        <div class="circle medium" data-value="6" data-category="elka"></div>
-        <div class="circle small" data-value="5" data-category="elka"></div>
-        <div class="circle neutral" data-value="4" data-category="elka"></div>
-        <div class="circle small disagree" data-value="3" data-category="elka"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elka"></div>
-        <div class="circle large disagree" data-value="1" data-category="elka"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="spe"></div>
+            <div class="circle medium" data-value="6" data-category="spe"></div>
+            <div class="circle small" data-value="5" data-category="spe"></div>
+            <div class="circle neutral" data-value="4" data-category="spe"></div>
+            <div class="circle small disagree" data-value="3" data-category="spe"></div>
+            <div class="circle medium disagree" data-value="2" data-category="spe"></div>
+            <div class="circle large disagree" data-value="1" data-category="spe"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 5: Teknik Elektronika -->
-  <div class="container" id="question5">
-    <h2>5. Apakah Anda tertarik dengan mikrokontroler seperti Arduino atau ESP32?</h2>
+<!-- Pertanyaan 46-50: Multimedia Broadcasting (MMB)-->
+<div id="question46" class="container question">
+    <h2>46. Apakah Anda tertarik dengan dunia produksi video, film, dan penyiaran digital?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elka"></div>
-        <div class="circle medium" data-value="6" data-category="elka"></div>
-        <div class="circle small" data-value="5" data-category="elka"></div>
-        <div class="circle neutral" data-value="4" data-category="elka"></div>
-        <div class="circle small disagree" data-value="3" data-category="elka"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elka"></div>
-        <div class="circle large disagree" data-value="1" data-category="elka"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="mmb"></div>
+            <div class="circle medium" data-value="6" data-category="mmb"></div>
+            <div class="circle small" data-value="5" data-category="mmb"></div>
+            <div class="circle neutral" data-value="4" data-category="mmb"></div>
+            <div class="circle small disagree" data-value="3" data-category="mmb"></div>
+            <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
+            <div class="circle large disagree" data-value="1" data-category="mmb"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
-  
-  <!-- Pertanyaan 6: Teknik Elektro Industri -->
-  <div class="container" id="question6">
-    <h2>6. Apakah Anda tertarik dengan pemrograman dan pengembangan perangkat lunak?</h2>
+</div>
+
+<div id="question47" class="container question">
+    <h2>47. Apakah Anda suka bekerja di depan atau belakang kamera?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elin"></div>
-        <div class="circle medium" data-value="6" data-category="elin"></div>
-        <div class="circle small" data-value="5" data-category="elin"></div>
-        <div class="circle neutral" data-value="4" data-category="elin"></div>
-        <div class="circle small disagree" data-value="3" data-category="elin"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elin"></div>
-        <div class="circle large disagree" data-value="1" data-category="elin"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="mmb"></div>
+            <div class="circle medium" data-value="6" data-category="mmb"></div>
+            <div class="circle small" data-value="5" data-category="mmb"></div>
+            <div class="circle neutral" data-value="4" data-category="mmb"></div>
+            <div class="circle small disagree" data-value="3" data-category="mmb"></div>
+            <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
+            <div class="circle large disagree" data-value="1" data-category="mmb"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
-  
-  <!-- Pertanyaan 7: Teknik Elektro Industri -->
-  <div class="container" id="question7">
-    <h2>7. Apakah Anda menyukai logika, algoritma, dan pemecahan masalah?</h2>
+</div>
+
+<div id="question48" class="container question">
+    <h2>48. Apakah Anda tertarik menggunakan software editing seperti Adobe Premiere atau After Effects?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elin"></div>
-        <div class="circle medium" data-value="6" data-category="elin"></div>
-        <div class="circle small" data-value="5" data-category="elin"></div>
-        <div class="circle neutral" data-value="4" data-category="elin"></div>
-        <div class="circle small disagree" data-value="3" data-category="elin"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elin"></div>
-        <div class="circle large disagree" data-value="1" data-category="elin"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="mmb"></div>
+            <div class="circle medium" data-value="6" data-category="mmb"></div>
+            <div class="circle small" data-value="5" data-category="mmb"></div>
+            <div class="circle neutral" data-value="4" data-category="mmb"></div>
+            <div class="circle small disagree" data-value="3" data-category="mmb"></div>
+            <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
+            <div class="circle large disagree" data-value="1" data-category="mmb"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
-  
-  <!-- Pertanyaan 8: Teknik Elektro Industri -->
-  <div class="container" id="question8">
-    <h2>8. Apakah Anda tertarik dengan pengembangan website, aplikasi, atau kecerdasan buatan?</h2>
+</div>
+
+<div id="question49" class="container question">
+    <h2>49. Apakah Anda ingin bekerja di dunia televisi, produksi konten, atau industri kreatif?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elin"></div>
-        <div class="circle medium" data-value="6" data-category="elin"></div>
-        <div class="circle small" data-value="5" data-category="elin"></div>
-        <div class="circle neutral" data-value="4" data-category="elin"></div>
-        <div class="circle small disagree" data-value="3" data-category="elin"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elin"></div>
-        <div class="circle large disagree" data-value="1" data-category="elin"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="mmb"></div>
+            <div class="circle medium" data-value="6" data-category="mmb"></div>
+            <div class="circle small" data-value="5" data-category="mmb"></div>
+            <div class="circle neutral" data-value="4" data-category="mmb"></div>
+            <div class="circle small disagree" data-value="3" data-category="mmb"></div>
+            <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
+            <div class="circle large disagree" data-value="1" data-category="mmb"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 9: Teknik Elektro Industri -->
-  <div class="container" id="question9">
-    <h2>9. Apakah Anda tertarik pada sistem otomatisasi seperti PLC atau robot industri?</h2>
+<div id="question50" class="container question">
+    <h2>50. Apakah Anda ingin belajar tentang teknik pengambilan gambar, editing, dan audio visual?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elin"></div>
-        <div class="circle medium" data-value="6" data-category="elin"></div>
-        <div class="circle small" data-value="5" data-category="elin"></div>
-        <div class="circle neutral" data-value="4" data-category="elin"></div>
-        <div class="circle small disagree" data-value="3" data-category="elin"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elin"></div>
-        <div class="circle large disagree" data-value="1" data-category="elin"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="mmb"></div>
+            <div class="circle medium" data-value="6" data-category="mmb"></div>
+            <div class="circle small" data-value="5" data-category="mmb"></div>
+            <div class="circle neutral" data-value="4" data-category="mmb"></div>
+            <div class="circle small disagree" data-value="3" data-category="mmb"></div>
+            <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
+            <div class="circle large disagree" data-value="1" data-category="mmb"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 10: Teknik Elektro Industri -->
-  <div class="container" id="question10">
-    <h2>10. Apakah Anda menikmati bekerja dengan sistem kelistrikan dan pengendali motor listrik?</h2>
+<!-- Pertanyaan 51-55: Teknologi Rekayasa Internet-->
+<div id="question51" class="container question">
+    <h2>51.  Apakah Anda tertarik membuat game dari sisi cerita, grafis, maupun pemrograman?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="elin"></div>
-        <div class="circle medium" data-value="6" data-category="elin"></div>
-        <div class="circle small" data-value="5" data-category="elin"></div>
-        <div class="circle neutral" data-value="4" data-category="elin"></div>
-        <div class="circle small disagree" data-value="3" data-category="elin"></div>
-        <div class="circle medium disagree" data-value="2" data-category="elin"></div>
-        <div class="circle large disagree" data-value="1" data-category="elin"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="tri"></div>
+            <div class="circle medium" data-value="6" data-category="tri"></div>
+            <div class="circle small" data-value="5" data-category="tri"></div>
+            <div class="circle neutral" data-value="4" data-category="tri"></div>
+            <div class="circle small disagree" data-value="3" data-category="tri"></div>
+            <div class="circle medium disagree" data-value="2" data-category="tri"></div>
+            <div class="circle large disagree" data-value="1" data-category="tri"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 11: Teknik Telekomunikasi -->
-  <div class="container" id="question11">
-    <h2>11. Apakah Anda ingin bekerja di bidang penyiaran, ISP, atau operator telekomunikasi?</h2>
+<div id="question52" class="container question">
+    <h2>52. Apakah Anda ingin belajar engine seperti Unity atau Unreal?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="telkom"></div>
-        <div class="circle medium" data-value="6" data-category="telkom"></div>
-        <div class="circle small" data-value="5" data-category="telkom"></div>
-        <div class="circle neutral" data-value="4" data-category="telkom"></div>
-        <div class="circle small disagree" data-value="3" data-category="telkom"></div>
-        <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
-        <div class="circle large disagree" data-value="1" data-category="telkom"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="tri"></div>
+            <div class="circle medium" data-value="6" data-category="tri"></div>
+            <div class="circle small" data-value="5" data-category="tri"></div>
+            <div class="circle neutral" data-value="4" data-category="tri"></div>
+            <div class="circle small disagree" data-value="3" data-category="tri"></div>
+            <div class="circle medium disagree" data-value="2" data-category="tri"></div>
+            <div class="circle large disagree" data-value="1" data-category="tri"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 12: Teknik Telekomunikasi -->
-  <div class="container" id="question12">
-    <h2>12. Apakah Anda penasaran bagaimana sinyal telepon dan internet dikirim?</h2>
+<div id="question53" class="container question">
+    <h2>53. Apakah Anda suka bermain game dan penasaran bagaimana game itu dibuat?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="telkom"></div>
-        <div class="circle medium" data-value="6" data-category="telkom"></div>
-        <div class="circle small" data-value="5" data-category="telkom"></div>
-        <div class="circle neutral" data-value="4" data-category="telkom"></div>
-        <div class="circle small disagree" data-value="3" data-category="telkom"></div>
-        <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
-        <div class="circle large disagree" data-value="1" data-category="telkom"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="tri"></div>
+            <div class="circle medium" data-value="6" data-category="tri"></div>
+            <div class="circle small" data-value="5" data-category="tri"></div>
+            <div class="circle neutral" data-value="4" data-category="tri"></div>
+            <div class="circle small disagree" data-value="3" data-category="tri"></div>
+            <div class="circle medium disagree" data-value="2" data-category="tri"></div>
+            <div class="circle large disagree" data-value="1" data-category="tri"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 13: Teknik Telekomunikasi -->
-  <div class="container" id="question13">
-    <h2>13. Apakah anda tertarik mempelajari jaringan komunikasi, seperti satelit, atau 5G?</h2>
+<div id="question54" class="container question">
+    <h2>54. Apakah Anda ingin menjadi game developer, game designer, atau game artist?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="telkom"></div>
-        <div class="circle medium" data-value="6" data-category="telkom"></div>
-        <div class="circle small" data-value="5" data-category="telkom"></div>
-        <div class="circle neutral" data-value="4" data-category="telkom"></div>
-        <div class="circle small disagree" data-value="3" data-category="telkom"></div>
-        <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
-        <div class="circle large disagree" data-value="1" data-category="telkom"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="tri"></div>
+            <div class="circle medium" data-value="6" data-category="tri"></div>
+            <div class="circle small" data-value="5" data-category="tri"></div>
+            <div class="circle neutral" data-value="4" data-category="tri"></div>
+            <div class="circle small disagree" data-value="3" data-category="tri"></div>
+            <div class="circle medium disagree" data-value="2" data-category="tri"></div>
+            <div class="circle large disagree" data-value="1" data-category="tri"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 14: Teknik Telekomunikasi -->
-  <div class="container" id="question14">
-    <h2>14. Apakah Anda senang mempelajari bagaimana teknologi atau jaringan masa depan memengaruhi kehidupan sehari-hari?</h2>
+<div id="question55" class="container question">
+    <h2>55. Apakah Anda suka bekerja dalam tim kreatif yang menggabungkan seni dan teknologi?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="telkom"></div>
-        <div class="circle medium" data-value="6" data-category="telkom"></div>
-        <div class="circle small" data-value="5" data-category="telkom"></div>
-        <div class="circle neutral" data-value="4" data-category="telkom"></div>
-        <div class="circle small disagree" data-value="3" data-category="telkom"></div>
-        <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
-        <div class="circle large disagree" data-value="1" data-category="telkom"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="tri"></div>
+            <div class="circle medium" data-value="6" data-category="tri"></div>
+            <div class="circle small" data-value="5" data-category="tri"></div>
+            <div class="circle neutral" data-value="4" data-category="tri"></div>
+            <div class="circle small disagree" data-value="3" data-category="tri"></div>
+            <div class="circle medium disagree" data-value="2" data-category="tri"></div>
+            <div class="circle large disagree" data-value="1" data-category="tri"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
+</div>
 
-  <!-- Pertanyaan 15: Teknik Telekomunikasi -->
-  <div class="container" id="question15">
-    <h2>15. Apakah Anda tertarik dengan sistem komunikasi digital dan transmisi data?</h2>
+<!-- Pertanyaan 56-60: Teknologi Game -->
+<div id="question56" class="container question">
+    <h2>56. Apakah Anda tertarik membuat game dari sisi cerita, grafis, maupun pemrograman?</h2>
     <div class="scale">
-      <span class="label">Setuju</span>
-      <div class="options">
-        <div class="circle large" data-value="7" data-category="telkom"></div>
-        <div class="circle medium" data-value="6" data-category="telkom"></div>
-        <div class="circle small" data-value="5" data-category="telkom"></div>
-        <div class="circle neutral" data-value="4" data-category="telkom"></div>
-        <div class="circle small disagree" data-value="3" data-category="telkom"></div>
-        <div class="circle medium disagree" data-value="2" data-category="telkom"></div>
-        <div class="circle large disagree" data-value="1" data-category="telkom"></div>
-      </div>
-      <span class="label">Tidak setuju</span>
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category sinter="gt"></div>
+            <div class="circle medium" data-value="6" data-category="gt"></div>
+            <div class="circle small" data-value="5" data-category="gt"></div>
+            <div class="circle neutral" data-value="4" data-category="gt"></div>
+            <div class="circle small disagree" data-value="3" data-category="gt"></div>
+            <div class="circle medium disagree" data-value="2" data-category="gt"></div>
+            <div class="circle large disagree" data-value="1" data-category="gt"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-  </div>
-  <br></br>
-
-<!-- Pertanyaan 16: Teknik Transportasi -->
-<div class="container" id="question16">
-  <h2>16. Apakah Anda tertarik mempelajari cara kerja kendaraan seperti mobil, kereta, atau pesawat?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="tri"></div>
-      <div class="circle medium" data-value="6" data-category="tri"></div>
-      <div class="circle small" data-value="5" data-category="tri"></div>
-      <div class="circle neutral" data-value="4" data-category="tri"></div>
-      <div class="circle small disagree" data-value="3" data-category="tri"></div>
-      <div class="circle medium disagree" data-value="2" data-category="tri"></div>
-      <div class="circle large disagree" data-value="1" data-category="tri"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
 </div>
-<br></br>
 
-<!-- Pertanyaan 17: Teknik Transportasi -->
-<div class="container" id="question17">
-  <h2>17. Apakah Anda suka merancang rute atau sistem transportasi yang efisien untuk perjalanan?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="tri"></div>
-      <div class="circle medium" data-value="6" data-category="tri"></div>
-      <div class="circle small" data-value="5" data-category="tri"></div>
-      <div class="circle neutral" data-value="4" data-category="tri"></div>
-      <div class="circle small disagree" data-value="3" data-category="tri"></div>
-      <div class="circle medium disagree" data-value="2" data-category="tri"></div>
-      <div class="circle large disagree" data-value="1" data-category="tri"></div>
+<div id="question57" class="container question">
+    <h2>57.  Apakah Anda ingin belajar engine seperti Unity atau Unreal?</h2>
+    <div class="scale">
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="gt"></div>
+            <div class="circle medium" data-value="6" data-category="gt"></div>
+            <div class="circle small" data-value="5" data-category="gt"></div>
+            <div class="circle neutral" data-value="4" data-category="gt"></div>
+            <div class="circle small disagree" data-value="3" data-category="gt"></div>
+            <div class="circle medium disagree" data-value="2" data-category="gt"></div>
+            <div class="circle large disagree" data-value="1" data-category="gt"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-    <span class="label">Tidak setuju</span>
-  </div>
 </div>
-<br></br>
 
-<!-- Pertanyaan 18: Teknik Transportasi -->
-<div class="container" id="question18">
-  <h2>18. Apakah Anda tertarik dengan teknologi kendaraan listrik atau kendaraan tanpa pengemudi?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="tri"></div>
-      <div class="circle medium" data-value="6" data-category="tri"></div>
-      <div class="circle small" data-value="5" data-category="tri"></div>
-      <div class="circle neutral" data-value="4" data-category="tri"></div>
-      <div class="circle small disagree" data-value="3" data-category="tri"></div>
-      <div class="circle medium disagree" data-value="2" data-category="tri"></div>
-      <div class="circle large disagree" data-value="1" data-category="tri"></div>
+<div id="question58" class="container question">
+    <h2>58. Apakah Anda suka bermain game dan penasaran bagaimana game itu dibuat?</h2>
+    <div class="scale">
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="gt"></div>
+            <div class="circle medium" data-value="6" data-category="gt"></div>
+            <div class="circle small" data-value="5" data-category="gt"></div>
+            <div class="circle neutral" data-value="4" data-category="gt"></div>
+            <div class="circle small disagree" data-value="3" data-category="gt"></div>
+            <div class="circle medium disagree" data-value="2" data-category="gt"></div>
+            <div class="circle large disagree" data-value="1" data-category="gt"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-    <span class="label">Tidak setuju</span>
-  </div>
 </div>
-<br></br>
 
-<!-- Pertanyaan 19: Teknik Transportasi -->
-<div class="container" id="question19">
-  <h2>19. Apakah Anda suka mempelajari sistem keselamatan transportasi seperti rem otomatis atau sensor kecelakaan?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="tri"></div>
-      <div class="circle medium" data-value="6" data-category="tri"></div>
-      <div class="circle small" data-value="5" data-category="tri"></div>
-      <div class="circle neutral" data-value="4" data-category="tri"></div>
-      <div class="circle small disagree" data-value="3" data-category="tri"></div>
-      <div class="circle medium disagree" data-value="2" data-category="tri"></div>
-      <div class="circle large disagree" data-value="1" data-category="tri"></div>
+<div id="question59" class="container question">
+    <h2>59. Apakah Anda ingin menjadi game developer, game designer, atau game artist?</h2>
+    <div class="scale">
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="gt"></div>
+            <div class="circle medium" data-value="6" data-category="gt"></div>
+            <div class="circle small" data-value="5" data-category="gt"></div>
+            <div class="circle neutral" data-value="4" data-category="gt"></div>
+            <div class="circle small disagree" data-value="3" data-category="gt"></div>
+            <div class="circle medium disagree" data-value="2" data-category="gt"></div>
+            <div class="circle large disagree" data-value="1" data-category="gt"></div>
+        </div>
+<div class="label">Tidak Setuju</div>
     </div>
-    <span class="label">Tidak setuju</span>
-  </div>
 </div>
-<br></br>
 
-<!-- Pertanyaan 20: Teknik Transportasi -->
-<div class="container" id="question20">
-  <h2>20. Apakah Anda tertarik mempelajari bagaimana mengatur lalu lintas atau transportasi publik yang efisien di kota?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="tri"></div>
-      <div class="circle medium" data-value="6" data-category="tri"></div>
-      <div class="circle small" data-value="5" data-category="tri"></div>
-      <div class="circle neutral" data-value="4" data-category="tri"></div>
-      <div class="circle small disagree" data-value="3" data-category="tri"></div>
-      <div class="circle medium disagree" data-value="2" data-category="tri"></div>
-      <div class="circle large disagree" data-value="1" data-category="tri"></div>
+<div id="question60" class="container question">
+    <h2>60. Apakah Anda suka bekerja dalam tim kreatif yang menggabungkan seni dan teknologi?</h2>
+    <div class="scale">
+        <div class="label">Setuju</div>
+        <div class="options">
+            <div class="circle large" data-value="7" data-category="gt"></div>
+            <div class="circle medium" data-value="6" data-category="gt"></div>
+            <div class="circle small" data-value="5" data-category="gt"></div>
+            <div class="circle neutral" data-value="4" data-category="gt"></div>
+            <div class="circle small disagree" data-value="3" data-category="gt"></div>
+            <div class="circle medium disagree" data-value="2" data-category="gt"></div>
+            <div class="circle large disagree" data-value="1" data-category="gt"></div>
+        </div>
+        <div class="label">Tidak Setuju</div>
     </div>
-    <span class="label">Tidak setuju</span>
-  </div>
 </div>
-<br></br>
 
-<!-- Pertanyaan 21: Teknik Sistem Data Terdistribusi -->
-<div class="container" id="question21">
-  <h2>21. Apakah Anda tertarik bagaimana data yang tersebar di banyak lokasi bisa saling terhubung dan digunakan bersama?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="sdt"></div>
-      <div class="circle medium" data-value="6" data-category="sdt"></div>
-      <div class="circle small" data-value="5" data-category="sdt"></div>
-      <div class="circle neutral" data-value="4" data-category="sdt"></div>
-      <div class="circle small disagree" data-value="3" data-category="sdt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
-      <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+    <div class="pagination">
+        <button id="prevBtn" class="page-btn">Previous</button>
+        <button id="nextBtn" class="page-btn">Next</button>
     </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
 
-<!-- Pertanyaan 22: Teknik Sistem Data Terdistribusi -->
-<div class="container" id="question22">
-  <h2>22. Apakah Anda senang mempelajari bagaimana sistem seperti Google atau Netflix mengelola data dari seluruh dunia secara efisien?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="sdt"></div>
-      <div class="circle medium" data-value="6" data-category="sdt"></div>
-      <div class="circle small" data-value="5" data-category="sdt"></div>
-      <div class="circle neutral" data-value="4" data-category="sdt"></div>
-      <div class="circle small disagree" data-value="3" data-category="sdt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
-      <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+    <button id="submitBtn" class="submit-btn">Lihat Hasil</button>
+
+    <div id="hasilContainer" class="hasil-container">
+
+        <div class="prodi-item prodi-teknik-elektronika">
+            <h3>Teknik Elektronika</h3>
+            <p>Nilai: <span id="scoreElka">0</span></p>
+            <p>Keahlian Lulusan: Desain dan implementasi sistem elektronik, pemrograman mikrokontroler, instrumentasi, dan sistem kontrol.</p>
+            <p>Prospek Karir: Teknisi/injenir elektronik, system integrator, perancang perangkat elektronik, automation engineer.</p>
+        </div>
+
+        <div class="prodi-item prodi-teknik-elektro-industri">
+            <h3>Teknik Elektro Industri</h3>
+            <p>Nilai: <span id="scoreElin">0</span></p>
+            <p>Keahlian Lulusan: Otomasi industri, kontrol proses, pemeliharaan sistem tenaga, dan PLC (Programmable Logic Controller).</p>
+            <p>Prospek Karir: Automation engineer, electrical engineer, teknisi pabrik industri, teknisi maintenance sistem tenaga.</p>
+        </div>
+
+        <div class="prodi-item prodi-teknik-telekomunikasi">
+            <h3>Teknik Telekomunikasi</h3>
+            <p>Nilai: <span id="scoreTelkom">0</span></p>
+            <p>Keahlian Lulusan: Jaringan komunikasi data, wireless communication, pemrosesan sinyal digital, sistem telekomunikasi fiber optik dan satelit.</p>
+            <p>Prospek Karir: Network engineer, teknisi BTS, engineer ISP, RF engineer, staf kementerian atau operator telekomunikasi.</p>
+        </div>
+
+        <div class="prodi-item prodi-teknologi-rekayasa-internet">
+            <h3>Teknologi Rekayasa Internet</h3>
+            <p>Nilai: <span id="scoreTRI">0</span></p>
+            <p>Teknologi telekomunikasi mempelajari jaringan.</p>
+        </div>
+
+        <div class="prodi-item prodi-sains-data-terapan">
+            <h3>Sains Data Terapan</h3>
+            <p>Nilai: <span id="scoreSDT">0</span></p>
+            <p>Keahlian Lulusan: Pengolahan dan analisis data, pemrograman statistik, machine learning, dan visualisasi data.</p>
+            <p>Prospek Karir: Data analyst, data scientist, business intelligence analyst, machine learning engineer.</p>
+        </div>
+
+        <div class="prodi-item prodi-teknik-komputer">
+            <h3>Teknik Komputer</h3>
+            <p>Nilai: <span id="scoreCE">0</span></p>
+            <p>Keahlian Lilimain: Sistem komputer, jaringan, embedded system, pengembangan perangkat keras dan lunak.</p>
+            <p>Prospek Karir: Embedded system developer, network engineer, software developer, teknisi komputer.</p>
+        </div>
+
+        <div class="prodi-item prodi-teknik-informatika">
+            <h3>Teknik Informatika</h3>
+            <p>Nilai: <span id="scoreIT">0</span></p>
+            <p>Keahlian Lulusan: Pengembangan perangkat lunak, pemrograman, rekayasa perangkat lunak, dan manajemen sistem informasi.</p>
+            <p>Prospek Karir: Software engineer, web developer, system analyst, mobile app developer, IT consultant.</p>
+        </div>
+
+        <div class="prodi-item prodi-teknik-mekatronika">
+            <h3>Teknik Mekatronika</h3>
+            <p>Nilai: <span id="scoreMeka">0</span></p>
+            <p>Keahlian Lulusan: Integrasi sistem mekanik, elektronik, dan kontrol menggunakan mikrokontroler dan PLC.</p>
+            <p>Prospek Karir: Mekatronika engineer, automation engineer, robotics engineer, teknisi sistem kontrol.</p>
+        </div>
+
+        <div class="prodi-item prodi-sistem-pembangkitan-energi">
+            <h3>Sistem Pembangkitan Energi</h3>
+            <p>Nilai: <span id="scoreSPE">0</span></p>
+            <p>Keahlian Lulusan: Sistem pembangkitan energi, teknologi energi terbarukan, manajemen energi, dan perawatan sistem tenaga.</p>
+            <p>Prospek Karir: Energy engineer, teknisi pembangkit listrik, konsultan energi terbarukan, manajer proyek energi.</p>
+        </div>
+
+        <div class="prodi-item prodi-teknologi-multimedia-broadcasting">
+            <h3>Teknologi Multimedia Broadcasting</h3>
+            <p>Nilai: <span id="scoreMMB">0</span></p>
+            <p>Keahlian Lulusan: Produksi multimedia, penyiaran, desain grafis, dan pengeditan video/audio.</p>
+        <p>Prospek Karir: Multimedia producer, broadcast engineer, graphic designer, content creator.</p>
     </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
 
-<!-- Pertanyaan 23: Teknik Sistem Data Terdistribusi -->
-<div class="container" id="question23">
-  <h2>23. Apakah Anda suka memahami bagaimana data tetap aman dan sinkron meskipun diakses dari banyak tempat secara bersamaan?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="sdt"></div>
-      <div class="circle medium" data-value="6" data-category="sdt"></div>
-      <div class="circle small" data-value="5" data-category="sdt"></div>
-      <div class="circle neutral" data-value="4" data-category="sdt"></div>
-      <div class="circle small disagree" data-value="3" data-category="sdt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
-      <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+    <div class="prodi-item prodi-teknologi-game">
+        <h3>Teknologi Game</h3>
+        <p>Nilai: <span id="scoreGT">0</span></p>
+        <p>Keahlian Lulusan: Pengembangan game, pemrograman aplikasi interaktif, desain antarmuka, dan animasi digital.</p>
+        <p>Prospek Karir: Game developer, UI/UX designer, animator, aplikasi developer.</p>
     </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
 
-<!-- Pertanyaan 24: Teknik Sistem Data Terdistribusi -->
-<div class="container" id="question24">
-  <h2>24. Apakah Anda ingin tahu bagaimana aplikasi seperti WhatsApp menyimpan pesan agar bisa dibuka di banyak perangkat?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="sdt"></div>
-      <div class="circle medium" data-value="6" data-category="sdt"></div>
-      <div class="circle small" data-value="5" data-category="sdt"></div>
-      <div class="circle neutral" data-value="4" data-category="sdt"></div>
-      <div class="circle small disagree" data-value="3" data-category="sdt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
-      <div class="circle large disagree" data-value="1" data-category="sdt"></div>
+    <div class="prodi-item prodi-teknologi-rekayasa-multimedia">
+        <h3>Teknologi Rekayasa Multimedia</h3>
+        <p>Nilai: <span id="scoreTRM">0</span></p>
+        <p>Keahlian Lulusan: Pengembangan sistem multimedia, teknologi robotik, integrasi perangkat keras dan lunak untuk aplikasi kreatif.</p>
+        <p>Prospek Karir: Multimedia system engineer, robotics developer, creative technologist, automation specialist.</p>
     </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
 
-<!-- Pertanyaan 25: Teknik Sistem Data Terdistribusi -->
-<div class="container" id="question25">
-  <h2>25. Apakah Anda tertarik bagaimana teknologi cloud seperti Google Drive atau Dropbox bekerja di balik layar?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="sdt"></div>
-      <div class="circle medium" data-value="6" data-category="sdt"></div>
-      <div class="circle small" data-value="5" data-category="sdt"></div>
-      <div class="circle neutral" data-value="4" data-category="sdt"></div>
-      <div class="circle small disagree" data-value="3" data-category="sdt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="sdt"></div>
-      <div class="circle large disagree" data-value="1" data-category="sdt"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 26: Teknik Komputer -->
-<div class="container" id="question26">
-  <h2>26. Apakah Anda tertarik mempelajari bagaimana komputer dirakit dari berbagai komponen seperti prosesor dan memori?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="ce"></div>
-      <div class="circle medium" data-value="6" data-category="ce"></div>
-      <div class="circle small" data-value="5" data-category="ce"></div>
-      <div class="circle neutral" data-value="4" data-category="ce"></div>
-      <div class="circle small disagree" data-value="3" data-category="ce"></div>
-      <div class="circle medium disagree" data-value="2" data-category="ce"></div>
-      <div class="circle large disagree" data-value="1" data-category="ce"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 27: Teknik Komputer -->
-<div class="container" id="question27">
-  <h2>27. Apakah Anda suka memahami bagaimana perangkat keras dan perangkat lunak komputer bekerja sama dalam suatu sistem?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="ce"></div>
-      <div class="circle medium" data-value="6" data-category="ce"></div>
-      <div class="circle small" data-value="5" data-category="ce"></div>
-      <div class="circle neutral" data-value="4" data-category="ce"></div>
-      <div class="circle small disagree" data-value="3" data-category="ce"></div>
-      <div class="circle medium disagree" data-value="2" data-category="ce"></div>
-      <div class="circle large disagree" data-value="1" data-category="ce"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 28: Teknik Komputer -->
-<div class="container" id="question28">
-  <h2>28. Apakah Anda senang mengeksplorasi bagaimana komputer bisa digunakan untuk mengendalikan alat elektronik seperti robot atau sensor?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="ce"></div>
-      <div class="circle medium" data-value="6" data-category="ce"></div>
-      <div class="circle small" data-value="5" data-category="ce"></div>
-      <div class="circle neutral" data-value="4" data-category="ce"></div>
-      <div class="circle small disagree" data-value="3" data-category="ce"></div>
-      <div class="circle medium disagree" data-value="2" data-category="ce"></div>
-      <div class="circle large disagree" data-value="1" data-category="ce"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 29: Teknik Komputer -->
-<div class="container" id="question29">
-  <h2>29. Apakah Anda ingin tahu bagaimana komputer bisa menjalankan berbagai sistem operasi seperti Windows, Linux, atau MacOS?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="ce"></div>
-      <div class="circle medium" data-value="6" data-category="ce"></div>
-      <div class="circle small" data-value="5" data-category="ce"></div>
-      <div class="circle neutral" data-value="4" data-category="ce"></div>
-      <div class="circle small disagree" data-value="3" data-category="ce"></div>
-      <div class="circle medium disagree" data-value="2" data-category="ce"></div>
-      <div class="circle large disagree" data-value="1" data-category="ce"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 30: Teknik Komputer -->
-<div class="container" id="question30">
-  <h2>30. Apakah Anda tertarik mempelajari cara kerja jaringan komputer dan bagaimana komputer saling berkomunikasi?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="ce"></div>
-      <div class="circle medium" data-value="6" data-category="ce"></div>
-      <div class="circle small" data-value="5" data-category="ce"></div>
-      <div class="circle neutral" data-value="4" data-category="ce"></div>
-      <div class="circle small disagree" data-value="3" data-category="ce"></div>
-      <div class="circle medium disagree" data-value="2" data-category="ce"></div>
-      <div class="circle large disagree" data-value="1" data-category="ce"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div> 
-<br></br>
-
-<!-- Pertanyaan 31: Teknologi Informasi -->
-<div class="container" id="question31">
-  <h2>31. Apakah Anda tertarik mempelajari bagaimana sebuah aplikasi atau website dibuat dan dikembangkan?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="it"></div>
-      <div class="circle medium" data-value="6" data-category="it"></div>
-      <div class="circle small" data-value="5" data-category="it"></div>
-      <div class="circle neutral" data-value="4" data-category="it"></div>
-      <div class="circle small disagree" data-value="3" data-category="it"></div>
-      <div class="circle medium disagree" data-value="2" data-category="it"></div>
-      <div class="circle large disagree" data-value="1" data-category="it"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 32: Teknologi Informasi -->
-<div class="container" id="question32">
-  <h2>32. Apakah Anda senang menggunakan teknologi untuk mempermudah pekerjaan, seperti menggunakan spreadsheet, cloud storage, atau software manajemen?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="it"></div>
-      <div class="circle medium" data-value="6" data-category="it"></div>
-      <div class="circle small" data-value="5" data-category="it"></div>
-      <div class="circle neutral" data-value="4" data-category="it"></div>
-      <div class="circle small disagree" data-value="3" data-category="it"></div>
-      <div class="circle medium disagree" data-value="2" data-category="it"></div>
-      <div class="circle large disagree" data-value="1" data-category="it"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 33: Teknologi Informasi -->
-<div class="container" id="question33">
-  <h2>33. Apakah Anda ingin mempelajari bagaimana data disimpan, diproses, dan dianalisis dalam sistem komputer?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="it"></div>
-      <div class="circle medium" data-value="6" data-category="it"></div>
-      <div class="circle small" data-value="5" data-category="it"></div>
-      <div class="circle neutral" data-value="4" data-category="it"></div>
-      <div class="circle small disagree" data-value="3" data-category="it"></div>
-      <div class="circle medium disagree" data-value="2" data-category="it"></div>
-      <div class="circle large disagree" data-value="1" data-category="it"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 34: Teknologi Informasi -->
-<div class="container" id="question34">
-  <h2>34. Apakah Anda suka mempelajari bagaimana teknologi informasi digunakan dalam dunia bisnis, pendidikan, dan kesehatan?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="it"></div>
-      <div class="circle medium" data-value="6" data-category="it"></div>
-      <div class="circle small" data-value="5" data-category="it"></div>
-      <div class="circle neutral" data-value="4" data-category="it"></div>
-      <div class="circle small disagree" data-value="3" data-category="it"></div>
-      <div class="circle medium disagree" data-value="2" data-category="it"></div>
-      <div class="circle large disagree" data-value="1" data-category="it"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 35: Teknologi Informasi -->
-<div class="container" id="question35">
-  <h2>35. Apakah Anda ingin belajar membuat sistem informasi seperti sistem akademik, keuangan, atau sistem pelayanan publik?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="it"></div>
-      <div class="circle medium" data-value="6" data-category="it"></div>
-      <div class="circle small" data-value="5" data-category="it"></div>
-      <div class="circle neutral" data-value="4" data-category="it"></div>
-      <div class="circle small disagree" data-value="3" data-category="it"></div>
-      <div class="circle medium disagree" data-value="2" data-category="it"></div>
-      <div class="circle large disagree" data-value="1" data-category="it"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div> 
-<br></br>
-
-<!-- Pertanyaan 36: Teknik Mekatronika -->
-<div class="container" id="question36">
-  <h2>36. Apakah Anda senang mempelajari cara kerja mesin otomatis seperti robot, lengan mekanik, atau sistem produksi otomatis?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="meka"></div>
-      <div class="circle medium" data-value="6" data-category="meka"></div>
-      <div class="circle small" data-value="5" data-category="meka"></div>
-      <div class="circle neutral" data-value="4" data-category="meka"></div>
-      <div class="circle small disagree" data-value="3" data-category="meka"></div>
-      <div class="circle medium disagree" data-value="2" data-category="meka"></div>
-      <div class="circle large disagree" data-value="1" data-category="meka"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 37: Teknik Mekatronika -->
-<div class="container" id="question37">
-  <h2>37. Apakah Anda tertarik menggabungkan pengetahuan mekanik, elektronik, dan pemrograman dalam satu proyek?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="meka"></div>
-      <div class="circle medium" data-value="6" data-category="meka"></div>
-      <div class="circle small" data-value="5" data-category="meka"></div>
-      <div class="circle neutral" data-value="4" data-category="meka"></div>
-      <div class="circle small disagree" data-value="3" data-category="meka"></div>
-      <div class="circle medium disagree" data-value="2" data-category="meka"></div>
-      <div class="circle large disagree" data-value="1" data-category="meka"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 38: Teknik Mekatronika -->
-<div class="container" id="question38">
-  <h2>38. Apakah Anda menikmati merancang dan membangun alat atau perangkat yang bisa bergerak dan dikendalikan secara otomatis?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="meka"></div>
-      <div class="circle medium" data-value="6" data-category="meka"></div>
-      <div class="circle small" data-value="5" data-category="meka"></div>
-      <div class="circle neutral" data-value="4" data-category="meka"></div>
-      <div class="circle small disagree" data-value="3" data-category="meka"></div>
-      <div class="circle medium disagree" data-value="2" data-category="meka"></div>
-      <div class="circle large disagree" data-value="1" data-category="meka"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 39: Teknik Mekatronika -->
-<div class="container" id="question39">
-  <h2>39. Apakah Anda tertarik mempelajari bagaimana sensor dan aktuator bekerja dalam sistem elektronik otomatis?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="meka"></div>
-      <div class="circle medium" data-value="6" data-category="meka"></div>
-      <div class="circle small" data-value="5" data-category="meka"></div>
-      <div class="circle neutral" data-value="4" data-category="meka"></div>
-      <div class="circle small disagree" data-value="3" data-category="meka"></div>
-      <div class="circle medium disagree" data-value="2" data-category="meka"></div>
-      <div class="circle large disagree" data-value="1" data-category="meka"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 40: Teknik Mekatronika -->
-<div class="container" id="question40">
-  <h2>40. Apakah Anda ingin bekerja di bidang otomasi industri seperti pabrik pintar atau teknologi robotik masa depan?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="meka"></div>
-      <div class="circle medium" data-value="6" data-category="meka"></div>
-      <div class="circle small" data-value="5" data-category="meka"></div>
-      <div class="circle neutral" data-value="4" data-category="meka"></div>
-      <div class="circle small disagree" data-value="3" data-category="meka"></div>
-      <div class="circle medium disagree" data-value="2" data-category="meka"></div>
-      <div class="circle large disagree" data-value="1" data-category="meka"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div> 
-<br></br>
-
-<!-- Pertanyaan 41: Sistem Perangkat Lunak -->
-<div class="container" id="question41">
-  <h2>41. Apakah Anda senang membuat aplikasi atau program komputer sederhana?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="spe"></div>
-      <div class="circle medium" data-value="6" data-category="spe"></div>
-      <div class="circle small" data-value="5" data-category="spe"></div>
-      <div class="circle neutral" data-value="4" data-category="spe"></div>
-      <div class="circle small disagree" data-value="3" data-category="spe"></div>
-      <div class="circle medium disagree" data-value="2" data-category="spe"></div>
-      <div class="circle large disagree" data-value="1" data-category="spe"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 42: Sistem Perangkat Lunak -->
-<div class="container" id="question42">
-  <h2>42. Apakah Anda tertarik mempelajari cara membuat game, aplikasi web, atau mobile?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="spe"></div>
-      <div class="circle medium" data-value="6" data-category="spe"></div>
-      <div class="circle small" data-value="5" data-category="spe"></div>
-      <div class="circle neutral" data-value="4" data-category="spe"></div>
-      <div class="circle small disagree" data-value="3" data-category="spe"></div>
-      <div class="circle medium disagree" data-value="2" data-category="spe"></div>
-      <div class="circle large disagree" data-value="1" data-category="spe"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 43: Sistem Perangkat Lunak -->
-<div class="container" id="question43">
-  <h2>43. Apakah Anda suka memecahkan masalah logika atau teka-teki yang berkaitan dengan pemrograman?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="spe"></div>
-      <div class="circle medium" data-value="6" data-category="spe"></div>
-      <div class="circle small" data-value="5" data-category="spe"></div>
-      <div class="circle neutral" data-value="4" data-category="spe"></div>
-      <div class="circle small disagree" data-value="3" data-category="spe"></div>
-      <div class="circle medium disagree" data-value="2" data-category="spe"></div>
-      <div class="circle large disagree" data-value="1" data-category="spe"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 44: Sistem Perangkat Lunak -->
-<div class="container" id="question44">
-  <h2>44. Apakah Anda tertarik mempelajari bagaimana aplikasi bisa saling terhubung menggunakan internet (API)?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="spe"></div>
-      <div class="circle medium" data-value="6" data-category="spe"></div>
-      <div class="circle small" data-value="5" data-category="spe"></div>
-      <div class="circle neutral" data-value="4" data-category="spe"></div>
-      <div class="circle small disagree" data-value="3" data-category="spe"></div>
-      <div class="circle medium disagree" data-value="2" data-category="spe"></div>
-      <div class="circle large disagree" data-value="1" data-category="spe"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 45: Sistem Perangkat Lunak -->
-<div class="container" id="question45">
-  <h2>45. Apakah Anda suka bekerja dalam tim untuk membuat proyek digital seperti aplikasi atau sistem informasi?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="spe"></div>
-      <div class="circle medium" data-value="6" data-category="spe"></div>
-      <div class="circle small" data-value="5" data-category="spe"></div>
-      <div class="circle neutral" data-value="4" data-category="spe"></div>
-      <div class="circle small disagree" data-value="3" data-category="spe"></div>
-      <div class="circle medium disagree" data-value="2" data-category="spe"></div>
-      <div class="circle large disagree" data-value="1" data-category="spe"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div> 
-<br></br>
-
-<!-- Pertanyaan 46: Multimedia -->
-<div class="container" id="question46">
-  <h2>46. Apakah Anda senang membuat atau mengedit video dan animasi?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="mmb"></div>
-      <div class="circle medium" data-value="6" data-category="mmb"></div>
-      <div class="circle small" data-value="5" data-category="mmb"></div>
-      <div class="circle neutral" data-value="4" data-category="mmb"></div>
-      <div class="circle small disagree" data-value="3" data-category="mmb"></div>
-      <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
-      <div class="circle large disagree" data-value="1" data-category="mmb"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 47: Multimedia -->
-<div class="container" id="question47">
-  <h2>47. Apakah Anda tertarik mendesain poster, logo, atau elemen grafis digital?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="mmb"></div>
-      <div class="circle medium" data-value="6" data-category="mmb"></div>
-      <div class="circle small" data-value="5" data-category="mmb"></div>
-      <div class="circle neutral" data-value="4" data-category="mmb"></div>
-      <div class="circle small disagree" data-value="3" data-category="mmb"></div>
-      <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
-      <div class="circle large disagree" data-value="1" data-category="mmb"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 48: Multimedia -->
-<div class="container" id="question48">
-  <h2>48. Apakah Anda senang menciptakan konten visual untuk media sosial?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="mmb"></div>
-      <div class="circle medium" data-value="6" data-category="mmb"></div>
-      <div class="circle small" data-value="5" data-category="mmb"></div>
-      <div class="circle neutral" data-value="4" data-category="mmb"></div>
-      <div class="circle small disagree" data-value="3" data-category="mmb"></div>
-      <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
-      <div class="circle large disagree" data-value="1" data-category="mmb"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 49: Multimedia -->
-<div class="container" id="question49">
-  <h2>49. Apakah Anda tertarik mempelajari cara kerja efek visual (VFX) atau animasi 3D?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="mmb"></div>
-      <div class="circle medium" data-value="6" data-category="mmb"></div>
-      <div class="circle small" data-value="5" data-category="mmb"></div>
-      <div class="circle neutral" data-value="4" data-category="mmb"></div>
-      <div class="circle small disagree" data-value="3" data-category="mmb"></div>
-      <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
-      <div class="circle large disagree" data-value="1" data-category="mmb"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 50: Multimedia -->
-<div class="container" id="question50">
-  <h2>50. Apakah Anda suka menggabungkan suara, gambar, dan teks menjadi satu karya digital?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="mmb"></div>
-      <div class="circle medium" data-value="6" data-category="mmb"></div>
-      <div class="circle small" data-value="5" data-category="mmb"></div>
-      <div class="circle neutral" data-value="4" data-category="mmb"></div>
-      <div class="circle small disagree" data-value="3" data-category="mmb"></div>
-      <div class="circle medium disagree" data-value="2" data-category="mmb"></div>
-      <div class="circle large disagree" data-value="1" data-category="mmb"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div> 
-<br></br>
-
-<!-- Pertanyaan 51: Geodesi dan Geomatika -->
-<div class="container" id="question51">
-  <h2>51. Apakah Anda tertarik memahami bagaimana peta digital seperti Google Maps bekerja?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="gt"></div>
-      <div class="circle medium" data-value="6" data-category="gt"></div>
-      <div class="circle small" data-value="5" data-category="gt"></div>
-      <div class="circle neutral" data-value="4" data-category="gt"></div>
-      <div class="circle small disagree" data-value="3" data-category="gt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="gt"></div>
-      <div class="circle large disagree" data-value="1" data-category="gt"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 52: Geodesi dan Geomatika -->
-<div class="container" id="question52">
-  <h2>52. Apakah Anda suka membaca atau membuat peta dan denah lokasi?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="gt"></div>
-      <div class="circle medium" data-value="6" data-category="gt"></div>
-      <div class="circle small" data-value="5" data-category="gt"></div>
-      <div class="circle neutral" data-value="4" data-category="gt"></div>
-      <div class="circle small disagree" data-value="3" data-category="gt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="gt"></div>
-      <div class="circle large disagree" data-value="1" data-category="gt"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 53: Geodesi dan Geomatika -->
-<div class="container" id="question53">
-  <h2>53. Apakah Anda ingin tahu bagaimana satelit digunakan untuk pemetaan dan navigasi?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="geodesigt"></div>
-      <div class="circle medium" data-value="6" data-category="gt"></div>
-      <div class="circle small" data-value="5" data-category="gt"></div>
-      <div class="circle neutral" data-value="4" data-category="gt"></div>
-      <div class="circle small disagree" data-value="3" data-category="gt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="gt"></div>
-      <div class="circle large disagree" data-value="1" data-category="gt"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 54: Geodesi dan Geomatika -->
-<div class="container" id="question54">
-  <h2>54. Apakah Anda penasaran bagaimana data geografis digunakan dalam mitigasi bencana?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="gt"></div>
-      <div class="circle medium" data-value="6" data-category="gt"></div>
-      <div class="circle small" data-value="5" data-category="gt"></div>
-      <div class="circle neutral" data-value="4" data-category="gt"></div>
-      <div class="circle small disagree" data-value="3" data-category="gt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="gt"></div>
-      <div class="circle large disagree" data-value="1" data-category="gt"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 55: Geodesi dan Geomatika -->
-<div class="container" id="question55">
-  <h2>55. Apakah Anda ingin belajar menggunakan drone atau alat ukur digital untuk survei lokasi?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="gt"></div>
-      <div class="circle medium" data-value="6" data-category="gt"></div>
-      <div class="circle small" data-value="5" data-category="gt"></div>
-      <div class="circle neutral" data-value="4" data-category="gt"></div>
-      <div class="circle small disagree" data-value="3" data-category="gt"></div>
-      <div class="circle medium disagree" data-value="2" data-category="gt"></div>
-      <div class="circle large disagree" data-value="1" data-category="gt"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 56: Teknik Robotika dan Mekatronika -->
-<div class="container" id="question56">
-  <h2>56. Apakah Anda tertarik dengan cara kerja robot dan bagaimana mereka membantu manusia dalam berbagai bidang?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="trm"></div>
-      <div class="circle medium" data-value="6" data-category="trm"></div>
-      <div class="circle small" data-value="5" data-category="trm"></div>
-      <div class="circle neutral" data-value="4" data-category="trm"></div>
-      <div class="circle small disagree" data-value="3" data-category="trm"></div>
-      <div class="circle medium disagree" data-value="2" data-category="trm"></div>
-      <div class="circle large disagree" data-value="1" data-category="trm"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 57: Teknik Robotika dan Mekatronika -->
-<div class="container" id="question57">
-  <h2>57. Apakah Anda suka membuat alat atau sistem otomatis yang bisa bekerja sendiri?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="trm"></div>
-      <div class="circle medium" data-value="6" data-category="trm"></div>
-      <div class="circle small" data-value="5" data-category="trm"></div>
-      <div class="circle neutral" data-value="4" data-category="trm"></div>
-      <div class="circle small disagree" data-value="3" data-category="trm"></div>
-      <div class="circle medium disagree" data-value="2" data-category="trm"></div>
-      <div class="circle large disagree" data-value="1" data-category="trm"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 58: Teknik Robotika dan Mekatronika -->
-<div class="container" id="question58">
-  <h2>58. Apakah Anda senang mencoba sensor, motor, atau komponen elektronik lainnya untuk membuat proyek kreatif?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="trm"></div>
-      <div class="circle medium" data-value="6" data-category="trm"></div>
-      <div class="circle small" data-value="5" data-category="trm"></div>
-      <div class="circle neutral" data-value="4" data-category="trm"></div>
-      <div class="circle small disagree" data-value="3" data-category="trm"></div>
-      <div class="circle medium disagree" data-value="2" data-category="trm"></div>
-      <div class="circle large disagree" data-value="1" data-category="trm"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 59: Teknik Robotika dan Mekatronika -->
-<div class="container" id="question59">
-  <h2>59. Apakah Anda ingin tahu bagaimana sistem kendali otomatis bekerja, seperti pada mobil tanpa pengemudi?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span>
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="trm"></div>
-      <div class="circle medium" data-value="6" data-category="trm"></div>
-      <div class="circle small" data-value="5" data-category="trm"></div>
-      <div class="circle neutral" data-value="4" data-category="trm"></div>
-      <div class="circle small disagree" data-value="3" data-category="trm"></div>
-      <div class="circle medium disagree" data-value="2" data-category="trm"></div>
-      <div class="circle large disagree" data-value="1" data-category="trm"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-<!-- Pertanyaan 60: Teknik Robotika dan Mekatronika -->
-<div class="container" id="question60">
-  <h2>60. Apakah Anda suka menonton atau mengikuti perkembangan lomba robotik, seperti kontes robot cerdas atau robot pemadam?</h2>
-  <div class="scale">
-    <span class="label">Setuju</span> 
-    <div class="options">
-      <div class="circle large" data-value="7" data-category="trm"></div>
-      <div class="circle medium" data-value="6" data-category="trm"></div>
-      <div class="circle small" data-value="5" data-category="trm"></div>
-      <div class="circle neutral" data-value="4" data-category="trm"></div>
-      <div class="circle small disagree" data-value="3" data-category="trm"></div>
-      <div class="circle medium disagree" data-value="2" data-category="trm"></div>
-      <div class="circle large disagree" data-value="1" data-category="trm"></div>
-    </div>
-    <span class="label">Tidak setuju</span>
-  </div>
-</div>
-<br></br>
-
-  <button class="submit-btn" id="submitBtn">Lihat Hasil</button>
-  
-  <div class="hasil-container" id="hasilContainer">
     <h2>Hasil Rekomendasi Prodi</h2>
-    <div id="nilaiElka" class="prodi-item prodi-teknik-elektronika">
-      <h3>Teknik Elektronika</h3>
-      <p>Nilai: <span id="scoreElka">0</span></p>
-      <p>Keahlian Lulusan: Desain dan implementasi sistem elektronik, pemrograman mikrokontroler, instrumentasi, dan sistem kontrol.</p>
-      <p>Prospek Karir: Teknisi/injenier elektronik, system integrator, perancang perangkat elektronik, automation engineer.</p>
-    </div>
-    <div id="nilaiElin" class="prodi-item prodi-teknik-elektro-industri">
-      <h3>Teknik Elektro Industri</h3>
-      <p>Nilai: <span id="scoreElin">0</span></p>
-      <p>Keahlian Lulusan: Otomasi industri, kontrol proses, pemeliharaan sistem tenaga, dan PLC (Programmable Logic Controller).</p>
-      <p>Prospek Karir: Automation engineer, electrical engineer, teknisi pabrik industri, teknisi maintenance sistem tenaga.</p>
-    </div>
-    <div id="nilaiTelkom" class="prodi-item prodi-teknik-telekomunikasi">
-      <h3>Teknik Telekomunikasi</h3>
-      <p>Nilai: <span id="scoreTelkom">0</span></p>
-      <p>Keahlian Lulusan: Jaringan komunikasi data, wireless communication, pemrosesan sinyal digital, sistem telekomunikasi fiber optik dan satelit.</p>
-      <p>Prospek Karir: Network engineer, teknisi BTS, engineer ISP, RF engineer, staf kementerian atau operator telekomunikasi.</p>
-    </div>
-    <div id="nilaiTRI" class="prodi-item prodi-teknik-rekayasa-internet">
-      <h3>Teknologi Rekayasa Internet</h3>
-      <p>Nilai: <span id="scoreTRI">0</span></p>
-      <p>Teknologi telekomunikasi mempelajari jaringan.</p>
-    </div>
-    <div id="nilaiSDT" class="prodi-item prodi-sains-data-terapan">
-      <h3>Sains Data Terapan</h3>
-      <p>Nilai: <span id="scoreSDT">0</span></p>
-      <p>Keahlian Lulusan: Pengolahan dan analisis data, pemrograman statistik, machine learning, dan visualisasi data.</p>
-      <p>Prospek Karir: Data analyst, data scientist, business intelligence analyst, machine learning engineer.</p>
-    </div>
-    <div id="nilaiCE" class="prodi-item prodi-teknik-komputer">
-      <h3>Teknik Komputer</h3>
-      <p>Nilai: <span id="scoreCE">0</span></p>
-      <p>Keahlian Lulusan: Sistem komputer, jaringan, embedded system, pengembangan perangkat keras dan lunak.</p>
-      <p>Prospek Karir: Embedded system developer, network engineer, software developer, teknisi komputer.</p>
-    </div>
-    <div id="nilaiIT" class="prodi-item prodi-teknik-informatika">
-      <h3>Teknik Informatika</h3>
-      <p>Nilai: <span id="scoreIT">0</span></p>
-      <p>Keahlian Lulusan: Pengembangan perangkat lunak, pemrograman, rekayasa perangkat lunak, dan manajemen sistem informasi.</p>
-      <p>Prospek Karir: Software engineer, web developer, system analyst, mobile app developer, IT consultant.</p>
-    </div>
-    <div id="nilaiMeka" class="prodi-item prodi-teknik-mekatronika">
-      <h3>Teknik Mekatronika</h3>
-      <p>Nilai: <span id="scoreMeka">0</span></p>
-      <p>Keahlian Lulusan: Integrasi sistem mekanik, elektronik, dan kontrol menggunakan mikrokontroler dan PLC.</p>
-      <p>Prospek Karir: Mekatronika engineer, automation engineer, robotic technician, perancang sistem otomasi.</p>
-    </div>
-    <div id="nilaiSPE" class="prodi-item prodi-sistem-pembangkit-energi">
-      <h3>Sistem Pembangkit Energi</h3>
-      <p>Nilai: <span id="scoreSPE">0</span></p>
-      <p>Keahlian Lulusan: Pengoperasian dan pemeliharaan sistem pembangkit listrik, serta teknologi energi baru dan terbarukan.</p>
-      <p>Prospek Karir: Operator pembangkit listrik, engineer di sektor energi terbarukan, teknisi sistem tenaga.</p>
-    </div>
-    <div id="nilaiMMB" class="prodi-item prodi-teknologi-multimedia-broadcasting">
-      <h3>Teknologi Multimedia Broadcasting</h3>
-      <p>Nilai: <span id="scoreMMB">0</span></p>
-      <p>Keahlian Lulusan: Produksi konten audio visual, broadcasting radio/TV, penguasaan kamera, editing video, animasi, dan sistem siaran digital.</p>
-      <p>Prospek Karir: Video editor, broadcaster, content creator, teknisi stasiun TV/radio, animator, media production specialist.</p>
-    </div>
-    <div id="nilaiGT" class="prodi-item prodi-teknologi-game">
-      <h3>Teknologi Game</h3>
-      <p>Nilai: <span id="scoreGT">0</span></p>
-      <p>Keahlian Lulusan: Desain dan pengembangan game, pemrograman game, animasi, grafis 2D/3D, dan manajemen proyek game.</p>
-      <p>Prospek Karir: Game developer, game designer, 3D artist, UI/UX designer, indie game creator.</p>
-    </div>
-    <div id="nilaiTRM" class="prodi-item prodi-teknik-rekayasa-multimedia">
-      <h3>Teknologi Rekayasa Multimedia</h3>
-      <p>Nilai: <span id="scoreTRM">0</span></p>
-      <p>Keahlian Lulusan: Pengolahan media digital, desain interaktif, animasi, audio-visual, serta pengembangan konten multimedia interaktif.</p>
-      <p>Prospek Karir: Multimedia designer, UI/UX designer, motion graphic artist, digital content creator.</p>
-    </div>
     <div id="rekomendasiProdi"></div>
-    <button class="reset-btn" id="resetBtn">Ulangi Kuesioner</button>
-  </div>
 
-  <script src="script.js"></script>
+    <button id="resetBtn" class="reset-btn">Ulangi Kuesioner</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
